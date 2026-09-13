@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Techolas Technologies-Data science</title>
+
+  <!-- favicon link  -->
+  <link rel="icon" href="/icon/Techolas-lcon.png">
+
+  <!-- css link  -->
+  <link rel="stylesheet" href="datascience.css">
+
+  <!-- tailwind cdn link  -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <!-- google font:poppins link  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <style>
+
+  </style>
+</head>
+
+<body>
+
+  <header>
+
+    <!-- main-navbar  -->
+    <nav class="flex justify-between items-center px-5 pt-2 h-20 fixed top-0 left-0 w-full bg-white z-100">
+
+      <!-- logo  -->
+      <a href="index.html">
+        <img src="/icon/Techolas-logo.webp" alt="" class="w-40 sm:w-45 ">
+      </a>
+
+      <!-- navlinks  -->
+      <div class="nav-container">
+        <a href="index.html#home" class="nav-link">home</a>
+        <a href="index.html#about" class="nav-link">About</a>
+        <a href="index.html#courses" class="nav-link">courses</a>
+        <a href="index.html#placement" class="nav-link">placements</a>
+        <a href="index.html#contacts" class="nav-link" id="contact">contact</a>
+      </div>
+
+      <!-- menulogo  -->
+      <img src="/icon/menu.png" alt="" id="menu" onclick=" shownav()">
+
+    </nav>
+
+    <!-- side-navbar  -->
+    <nav class="sidenav">
+
+      <!-- closelogo  -->
+      <img src="/icon/x-solid.png" alt="" class="close" onclick="closenav()">
+
+      <!-- side-navlinks  -->
+      <div class="side-nav-container">
+        <a href="index.html#home" class="nav-link" onclick="closenav()">home</a>
+        <a href="index.html#about" class="nav-link" onclick="closenav()">About</a>
+        <a href="index.html#courses" class="nav-link" onclick="closenav()">courses</a>
+        <a href="index.html#placement" class="nav-link" onclick="closenav()">placements</a>
+        <a href="index.html#contacts" class="nav-link" id="contact" onclick="closenav()">contact</a>
+      </div>
+
+    </nav>
+
+
+  </header>
+
+  <img src="/images/ds carosal.png" alt="" class="w-full mt-20">
+  <main class="px-10">
+
+    <section id="ds-section">
+      <div class="ds">
+        <h1>Course Description</h1>
+        <p>Our Data Science Course in Calicut is a comprehensive, job-oriented program designed to build strong
+          analytical and technical foundations. The course covers essential tools and technologies including Python,
+          SQL, NumPy, Pandas, and Statistics to help students master data analysis and interpretation.</p>
+
+        <p>Students gain hands-on experience in data visualization using Matplotlib and Seaborn, enabling them to create
+          meaningful business insights from complex datasets.The program includes in-depth Machine Learning training
+          with scikit-learn and Deep Learning using TensorFlow and PyTorch, preparing learners for real-world AI
+          applications.</p>
+
+
+      </div>
+
+      <div class="box">
+        <h2>Courses details</h2>
+        <h4>Durations : <span>8 Months</span></h4>
+        <h4>Lessons : <span>5 Days a Week</span></h4>
+        <h4>Language : <span>Malayalam,English</span></h4>
+        <h4>Registration Fees : <span>500rs</span></h4>
+
+      </div>
+    </section>
+
+    <button id="overview"
+      class="px-5 py-2 border-1 border-grey rounded-lg hover:bg-[var(--main-color)] hover:border-white m-3 font-semibold" onclick=" btnoverview()">overview</button>
+    <button id="Curriculum"
+      class="px-5 py-2 border-1 border-grey rounded-lg hover:bg-[var(--main-color)] hover:border-white m-3 font-semibold" onclick="btncurriculumdiv()">Curriculum</button>
+
+
+
+    <section id="overview-div">
+      Our Data Science Course in Calicut is a structured and industry-aligned program designed to build a strong
+      foundation in data analysis, statistics, and programming. The curriculum begins with core technologies such as
+      Python, SQL, NumPy, Pandas, and Statistics, enabling learners to clean, analyze, and interpret complex datasets
+      with confidence.
+      The course places strong emphasis on data visualization and exploratory data analysis, using tools like Matplotlib
+      and Seaborn to communicate insights effectively. Students learn to transform raw data into meaningful visual
+      stories that support data-driven decision-making across industries.
+      Advanced modules focus on Machine Learning using scikit-learn and Deep Learning with TensorFlow and PyTorch,
+      providing practical exposure to predictive modeling and AI-driven solutions. The curriculum also includes
+      specialized domains such as Natural Language Processing (NLP) and Computer Vision, equipping learners with
+      in-demand, future-ready skills.
+      To bridge the gap between technical expertise and business application, the program includes Power BI and Tableau
+      for business intelligence, along with GitHub for version control and Adobe tools for professional reporting and
+      presentation.
+      With real-time projects, expert mentorship, and placement assistance, our Data Science training in Calicut
+      prepares learners for roles such as:
+      <br><br>
+      Data Scientist
+      <br><br>
+      Machine Learning Engineer
+      <br><br>
+      Data Analyst
+      <br><br>
+      Business Intelligence Analyst
+      <br><br>
+      This comprehensive approach ensures students are industry-ready and confident to build successful careers in Data
+      Science.
+    </section>
+
+<section id="curriculum-div">
+  <h1>PHASE 1 — Foundations & Programming </h1>
+
+  <h3>Python for Data Science</h3>
+<p>● Functional Programming: Built-in functions, user-defined functions, and Lambda functions</p>
+
+<p>● File Handling: Working with CSV, JSON, and text files; directory manipulation using OS functions.</p>
+
+<p>● Object-Oriented Programming (OOP): Classes, objects, __init__, inheritance, polymorphism, and operator overloading.</p>
+
+<p>● Advanced Python: Decorators, iterators, generators, and regular expressions.</p>
+
+<p>● Error Management: Exception handling (try-except-else-finally) and debugging with PDB.</p>
+
+<h3>SQL & Database Management</h3>
+
+<p>● Introduction to related databases</p>
+
+<p>● Installation of MySQL Workbench</p>
+
+<p>● Database creation - Create, Delete, Show, Use</p>
+
+<p>● Table creation - Create, Alter, Update, Delete, Select</p>
+
+<p>● Clauses - Where, Group By, Order By, Having, Like</p>
+
+<p>● SQL Constraints</p>
+
+<p>● Primary Key, Foreign Key</p>
+
+<p>● Unique</p>
+
+<p>● Not Null</p>
+
+<p>● Default</p>
+
+<p>● Auto Increment</p>
+
+<p>● Joins - Inner Join, Left Join, Right Join, Outer Join</p>
+
+<p>● sqlite3</p>
+
+<h3> Power BI</h3>
+
+<p>● Why Power BI?</p>
+
+<p>● What is Power BI?</p>
+
+<p>● Power BI Installation</p>
+
+<p>● Features - Data Integration, Data Transformation, Data Modeling, Visualization, Collaboration, and Sharing</p>
+
+<p>● BI Components - Power Query, Power Pivot, Power View, Power Map, Power BI Desktop</p>
+
+<p>● DAX</p>
+
+<p>● Architecture</p>
+
+<p>● Power BI Desktop</p>
+
+<p>● Creating Dashboards</p>
+
+<p>● Power Query - Filtering Rows, Sorting Data, Grouping Data by Specific Columns, Splitting and Merging Columns, Pivoting and Unpivoting Data, Replacing Values and Cleaning Text, Data Functions</p>
+
+<p>● Power BI Report Server</p>
+
+<p>● Power BI Pro License and its Features</p>
+
+<p>● Visualization Using Python</p>
+
+<p>● Sharing Reports in Various Formats and Advanced Data Connectivity</p>
+
+<h1>PHASE 2 — Machine Learning & Modeling </h1>
+
+<h3>Data Preparation &amp; Engineering</h3>
+
+<p>● Missing Value Handling</p>
+
+<p>● Outlier Detection and Removal</p>
+
+<p>● Encoding</p>
+
+<p>● Scaling</p>
+
+<p>● Duplicate Data Handling</p>
+
+<p>● Feature Reduction</p>
+
+<h3>Machine Learning</h3>
+
+<p>● What is Machine Learning?</p>
+
+<p>● How Does Machine Learning Work?</p>
+
+<p>● Types of Machine Learning (Supervised Learning, Unsupervised Learning, and Reinforcement Learning)</p>
+
+<p>● AI vs ML vs DL</p>
+
+
+<h1>PHASE 3 — Advanced AI &amp; Deep Learning</h1>
+
+<h3>Deep Learning</h3>
+
+<p>● ANN Basics: Perceptrons, Activation Functions, Backpropagation, Optimizers (Adam)</p>
+
+<p>● Regularization: Dropout, Batch Normalization, Early Stopping</p>
+
+<p>● CNN: Convolution &amp; Pooling Layers, Standard Architectures (ResNet Basics)</p>
+
+<p>● Transfer Learning: Loading Pretrained Models and Fine-Tuning Final Layers</p>
+
+<p>● RNN / LSTM / GRU: Basic Idea and Use Cases for Sequence &amp; Time-Series Data (Conceptual)</p>
+
+<h3>NLP, Transformers &amp; LLMs</h3>
+
+<p>● ANN Basics: Perceptrons, Activation Functions, Backpropagation, Optimizers (Adam)</p>
+
+<p>● Transformer Architecture: Self-Attention, BERT, GPT — Conceptual Understanding</p>
+
+<p>● Hugging Face Transformers: Loading Models, Pipelines, and Inference</p>
+
+<p>● RAG (Retrieval-Augmented Generation): Embeddings and Vector Databases (FAISS, ChromaDB)</p>
+
+<p>● LangChain: Chains, Document Loaders, Retrievers, Memory, and Tools</p>
+
+<p>● LlamaIndex: Document Ingestion, Query Engines, and Index Types</p>
+
+<p>● Running Local LLMs with Ollama (Llama 3, Mistral, Phi-3)</p>
+
+<p>● LLM Agents: ReAct Pattern, Tool Calling, and Basic Multi-Step Reasoning</p>
+
+<h3>Computer Vision (OpenCV)</h3>
+
+<p>● OpenCV Essentials: Image I/O, Transformations, Color Spaces, Drawing, and Contours</p>
+
+<p>● Image Preprocessing: Resizing, Filtering, Thresholding, and Augmentation</p>
+
+<p>● Object Detection: YOLOv8 — Training, Evaluation, and Inference</p>
+
+<p>● Vision Transformer (ViT) Basics: Conceptual Overview and When to Use</p>
+
+<p>● CLIP: Zero-Shot Image Classification — Practical Usage (No Deep Theory)</p>
+
+<p>● Deploying a Computer Vision Model Using FastAPI and Docker</p>
+
+<h1>PHASE 4 — Data Engineering &amp; MLOps</h1>
+
+<h3>Data Engineering &amp; MLOps</h3>
+
+<p>● Basic ETL Concepts: Extract, Transform, Load (Batch Pipelines)</p>
+
+<p>● Apache Airflow: DAGs, Scheduling, Operators, and Task Dependencies</p>
+
+<p>● dbt: SQL Transformations, Models, Tests, and Documentation</p>
+
+<p>● Docker: Containers, Images, Dockerfile, and Docker Compose for ML Services</p>
+
+<p>● MLflow: Experiment Tracking, Model Registry, and Artifact Storage</p>
+
+<p>● DVC: Data and Model Versioning, Pipeline Reproducibility</p>
+
+<p>● CI/CD for ML: GitHub Actions, Automated Model Testing, and Validation</p>
+
+<h3>Cloud Computing</h3>
+
+<p>● AWS Introduction</p>
+
+<p>● AWS IAM</p>
+
+<p>● Amazon EC2 (Elastic Compute Cloud)</p>
+
+<p>● Amazon S3 (Simple Storage Service)</p>
+
+<h1>PHASE 5 — Project</h1>
+
+<h3>Capstone Project</h3>
+
+<p>● Problem Framing: Choose an ML, Computer Vision, or LLM/RAG Real-World Problem</p>
+
+<p>● EDA: Pandas + Seaborn Analysis with a Power BI Dashboard for Stakeholders</p>
+
+<p>● Modeling: Compare Approaches and Track Experiments with MLflow</p>
+
+<p>● AI Layer: Build a RAG Pipeline or LLM Agent Using LangChain / LlamaIndex</p>
+
+<p>● Deployment: Dockerized FastAPI or Streamlit App on an Azure ML Endpoint</p>
+
+<p>● Demo: Recorded Walkthrough and GitHub Portfolio Page</p>
+
+</section>
+
+
+
+
+
+
+  </main>
+
+  <footer class="h-16 bg-[var(--main-color)] flex justify-center items-center ">
+    &copy; 2026 techolas technologies.all rights reserved
+  </footer>
+
+
+
+  <script src="script.js"></script>

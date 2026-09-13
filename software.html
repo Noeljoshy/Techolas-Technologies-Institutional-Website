@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Techolas Technologies-Software Testing</title>
+
+  <!-- favicon link  -->
+  <link rel="icon" href="/icon/Techolas-lcon.png">
+
+  <!-- css link  -->
+  <link rel="stylesheet" href="datascience.css">
+
+  <!-- tailwind cdn link  -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <!-- google font:poppins link  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <style>
+
+  </style>
+</head>
+
+<body>
+
+  <header>
+
+    <!-- main-navbar  -->
+    <nav class="flex justify-between items-center px-5 pt-2 h-20 fixed top-0 left-0 w-full bg-white z-100">
+
+      <!-- logo  -->
+      <a href="index.html">
+        <img src="/icon/Techolas-logo.webp" alt="" class="w-40 sm:w-45 ">
+      </a>
+
+      <!-- navlinks  -->
+      <div class="nav-container">
+        <a href="index.html#home" class="nav-link">home</a>
+        <a href="index.html#about" class="nav-link">About</a>
+        <a href="index.html#courses" class="nav-link">courses</a>
+        <a href="index.html#placement" class="nav-link">placements</a>
+        <a href="index.html#contacts" class="nav-link" id="contact">contact</a>
+      </div>
+
+      <!-- menulogo  -->
+      <img src="/icon/menu.png" alt="" id="menu" onclick=" shownav()">
+
+    </nav>
+
+    <!-- side-navbar  -->
+    <nav class="sidenav">
+
+      <!-- closelogo  -->
+      <img src="/icon/x-solid.png" alt="" class="close" onclick="closenav()">
+
+      <!-- side-navlinks  -->
+      <div class="side-nav-container">
+        <a href="index.html#home" class="nav-link" onclick="closenav()">home</a>
+        <a href="index.html#about" class="nav-link" onclick="closenav()">About</a>
+        <a href="index.html#courses" class="nav-link" onclick="closenav()">courses</a>
+        <a href="index.html#placement" class="nav-link" onclick="closenav()">placements</a>
+        <a href="index.html#contacts" class="nav-link" id="contact" onclick="closenav()">contact</a>
+      </div>
+
+    </nav>
+
+
+  </header>
+
+  <img src="/images/st.png" alt="" class="w-full mt-20">
+  <main class="px-10">
+
+    <section id="ds-section">
+      <div class="ds w-[100%]">
+        <h1>Course Description</h1>
+        <p>Our Software Testing Course is designed to provide a strong foundation in both manual and automation testing, equipping learners with the practical skills required to ensure software quality and reliability. The course begins with the fundamentals of software testing, including SDLC, STLC, testing methodologies, test case design, defect tracking, and various testing techniques such as Black Box, White Box, and Functional Testing.</p>
+
+        <p>As the course progresses, students gain hands-on experience with industry-standard tools and technologies, including Selenium WebDriver, TestNG, Postman, and JMeter. They will learn automation testing, API testing, and performance testing through real-world projects and practical exercises. By the end of the program, learners will be confident in testing web applications, identifying defects, automating test cases, and preparing for careers as Software Test Engineers or QA Automation Engineers.</p>
+
+
+      </div>
+
+      <div class="box ">
+        <h2>Courses details</h2>
+        <h4>Durations : <span>3 Months</span></h4>
+        <h4>Lessons : <span>5 Days a Week</span></h4>
+        <h4>Language : <span>Malayalam,English</span></h4>
+        <h4>Registration Fees : <span>500rs</span></h4>
+
+      </div>
+    </section>
+
+    <button id="overview"
+      class="px-5 py-2 border-1 border-grey rounded-lg hover:bg-[var(--main-color)] hover:border-white m-3 font-semibold" onclick=" btnoverview()">overview</button>
+    <button id="Curriculum"
+      class="px-5 py-2 border-1 border-grey rounded-lg hover:bg-[var(--main-color)] hover:border-white m-3 font-semibold" onclick="btncurriculumdiv()">Curriculum</button>
+
+
+
+    <section id="overview-div">
+      Our Software Testing Course is designed to provide a comprehensive understanding of software quality assurance and testing methodologies used in the IT industry. Whether you are a beginner or an aspiring QA professional, this course covers the essential concepts of software testing, including the Software Development Life Cycle (SDLC), Software Testing Life Cycle (STLC), testing principles, and various testing techniques. Students will learn how to create effective test plans, write test cases, execute test scenarios, and identify software defects with confidence.
+
+The course also focuses on practical skills in Manual Testing and Automation Testing using industry-standard tools. Learners will gain hands-on experience with Selenium WebDriver, TestNG, API testing using Postman, and Performance Testing with JMeter. Through real-time projects and practical exercises, students will understand how to automate test cases, validate web applications, perform API testing, and ensure software reliability and performance in real-world environments.
+
+By the end of the course, participants will have the skills required to perform end-to-end software testing, report and manage defects, and implement automation frameworks for efficient testing. With a strong emphasis on practical learning and industry best practices, this program prepares students for careers as Software Test Engineers, QA Engineers, Automation Test Engineers, and other quality assurance roles in the software industry.
+    </section>
+
+<section id="curriculum-div">
+ <h1>MODULE 1</h1>
+
+<h3>Introduction to Software Testing</h3>
+
+<p>● What is Software Testing?</p>
+<p>● Importance of Software Testing</p>
+<p>● Software Development Life Cycle (SDLC)</p>
+<p>● Software Testing Life Cycle (STLC)</p>
+<p>● Types of Software Testing</p>
+
+<h1>MODULE 2</h1>
+
+<h3>Manual Testing</h3>
+
+<p>● Test Plan</p>
+<p>● Test Scenario</p>
+<p>● Test Case Design</p>
+<p>● Bug Life Cycle</p>
+<p>● Defect Reporting and Tracking</p>
+
+<h1>MODULE 3</h1>
+
+<h3>Testing Techniques</h3>
+
+<p>● Black Box Testing</p>
+<p>● White Box Testing</p>
+<p>● Grey Box Testing</p>
+<p>● Functional Testing</p>
+<p>● Non-Functional Testing</p>
+
+<h1>MODULE 4</h1>
+
+<h3>Automation Testing</h3>
+
+<p>● Introduction to Automation Testing</p>
+<p>● Selenium WebDriver Basics</p>
+<p>● Locators in Selenium</p>
+<p>● TestNG Framework</p>
+<p>● Automation Framework Basics</p>
+
+<h1>MODULE 5</h1>
+
+<h3>API &amp; Performance Testing</h3>
+
+<p>● Introduction to API Testing</p>
+<p>● Postman Basics</p>
+<p>● HTTP Methods (GET, POST, PUT, DELETE)</p>
+<p>● Introduction to Performance Testing</p>
+<p>● JMeter Basics</p>
+
+</section>
+
+
+
+
+
+
+  </main>
+
+  <footer class="h-16 bg-[var(--main-color)] flex justify-center items-center ">
+    &copy; 2026 techolas technologies.all rights reserved
+  </footer>
+
+
+
+  <script src="script.js"></script>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Techolas Technologies-About</title>
+
+  <!-- favicon link  -->
+  <link rel="icon" href="/icon/Techolas-lcon.png">
+
+  <!-- css link  -->
+  <link rel="stylesheet" href="about.css">
+
+  <!-- tailwind cdn link  -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <!-- google font:poppins link  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+
+    <!-- main-navbar  -->
+    <nav class="flex justify-between items-center px-5 pt-2 h-20 fixed top-0 left-0 w-full bg-white z-100">
+
+      <!-- logo  -->
+      <a href="index.html">
+        <img src="/icon/Techolas-logo.webp" alt="" class="w-40 sm:w-45 ">
+      </a>
+
+      <!-- navlinks  -->
+      <div class="nav-container">
+        <a href="index.html#home" class="nav-link">home</a>
+        <a href="index.html#about" class="nav-link">About</a>
+        <a href="index.html#courses" class="nav-link">courses</a>
+        <a href="index.html#placement" class="nav-link">placements</a>
+        <a href="index.html#contacts" class="nav-link" id="contact">contact</a>
+      </div>
+
+      <!-- menulogo  -->
+      <img src="/icon/menu.png" alt="" id="menu" onclick=" shownav()">
+
+    </nav>
+
+    <!-- side-navbar  -->
+    <nav class="sidenav">
+
+      <!-- closelogo  -->
+      <img src="/icon/x-solid.png" alt="" class="close" onclick="closenav()">
+
+      <!-- side-navlinks  -->
+      <div class="side-nav-container">
+        <a href="index.html#home" class="nav-link" onclick="closenav()">home</a>
+        <a href="index.html#about" class="nav-link" onclick="closenav()">About</a>
+        <a href="index.html#courses" class="nav-link" onclick="closenav()">courses</a>
+        <a href="index.html#placement" class="nav-link" onclick="closenav()">placements</a>
+        <a href="index.html#contacts" class="nav-link" id="contact" onclick="closenav()">contact</a>
+      </div>
+
+    </nav>
+
+
+  </header>
+
+  <main class="px-10">
+
+    <!-- about section  -->
+
+    <section id="about" class="flex flex-col pt-20 pb-20">
+      <h1>who we are</h1>
+
+      <p><span class="font-bold">Techolas Technologies is a trusted software training institute in Calicut, Kerala,
+          focused on shaping future IT professionals through industry-focused and career-oriented training programs.
+        </span>With a strong commitment to quality education.
+
+        Techolas offers comprehensive training in Data Analytics, Python Full Stack, MERN Stack, Data Science, Business
+        Analytics, Data Analytics with Gen-Ai and other in-demand technologies. Our expert trainers, practical learning
+        methodology, and placement-oriented programs help students gain real-world technical skills and build successful
+        careers in the fast-growing IT industry.</p>
+
+      <p>We specialize in advanced software and data analytics training in Calicut, delivering beginner-friendly and
+        career-transition programs designed for students, working professionals, and graduates seeking the right entry
+        point into the IT sector. Whether you are a bachelor’s or master’s degree holder, a working professional, or
+        someone looking to restart or switch careers, Techolas helps you build a clear and scalable career path in
+        technology.
+
+        At Techolas, learning is guided by experienced industry professionals who bring real-world insights into the
+        classroom. Our industry-aligned curriculum is continuously updated based on current market needs and feedback
+        from hiring partners. Our key training areas include Data Science, Python Full Stack, MERN Stack, Data
+        Analytics, Data Analytics with GEN AI and Business Analytics. With a strong focus on placements and a training
+        environment that reflects real-world IT work culture, Techolas continues to be a reliable gateway for students
+        and professionals aiming to access quality job opportunities in Kerala’s IT ecosystem.</p>
+
+      <div class="flex flex-col gap-10   md:flex-row">
+        <div id="mission">
+          <h2>Mission</h2>
+          <p>Our mission is to deliver high-quality, practical IT training that prepares students for real careers in
+            the technology industry. We focus on hands-on learning, industry-relevant courses, and continuous skill
+            development to ensure every learner becomes truly job-ready.</p>
+        </div>
+        <div id="vision">
+          <h2>vision</h2>
+          <p>Our vision is to bring tech talent to the global stage by creating skilled, confident, and future-ready
+            professionals. We aim to make technology education meaningful, affordable, and impactful—empowering learners
+            to contribute to India’s digital growth and compete successfully in the global tech ecosystem.</p>
+        </div>
+      </div>
+
+      <!-- ////////////////////  -->
+      <div>
+        <h1>Why Choose Techolas Technologies</h1>
+
+        <p>Techolas Technologies is a trusted software training institute in Calicut, Kerala, with over 8+ years of
+          experience in delivering career-focused IT education. We have successfully trained more than 5000 students
+          through industry-relevant programs in Python, MERN Stack, Data Science, Data Analytics and Business Analytics.
+          Our mission is to empower individuals from all socioeconomic backgrounds by providing practical training,
+          real-world project experience, and dedicated placement support, helping them build confident and successful
+          careers in the modern technology industry.</p>
+      </div>
+
+      <div class="grid grid-cols-1 gap-10 place-items-center my-10  md:grid-cols-2 lg:grid-cols-3">
+
+        <div class="quality">
+          <h2>Industry-Relevant Courses</h2>
+          <p>With over seven years in software training and over 5000 students taught, we've refined our curriculum to
+            meet evolving tech demands, ensuring a well-rounded learning experience.</p>
+        </div>
+
+        <div class="quality">
+          <h2>Qualified & Supportive Trainers</h2>
+          <p>Experienced mentors who teach clearly, guide patiently, and help students grow.</p>
+        </div>
+
+        <div class="quality">
+          <h2>Real-World Project Exposure</h2>
+          <p>We believe in learning by doing. Our curriculum incorporates real-world projects, giving you practical
+            experience and a portfolio to showcase your skills to potential employers.</p>
+        </div>
+
+        <div class="quality">
+          <h2>Strong Placement Support</h2>
+          <p>We have assistance with interviews, internships, company tie-ups, and job opportunities, maximizing your
+            chances of getting the best career opportunity .</p>
+        </div>
+
+        <div class="quality">
+          <h2>Comprehensive Mentor Support</h2>
+          <p>We understand that every student's journey is unique. Our mentor support program provides personalised
+            guidance and encouragement, helping you navigate challenges and stay on track towards your career goals.</p>
+        </div>
+
+        <div class="quality">
+          <h2>Cutting-Edge Technology</h2>
+          <p>Cutting edge technology powers our advanced AI interview practice platform delivering personalized feedback
+            that sharpens your skills builds confidence and prepares you for real world hiring success fast.</p>
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+  </main>
+
+  <footer class="h-16 bg-[var(--main-color)] flex justify-center items-center ">
+    &copy; 2026 techolas technologies.all rights reserved
+  </footer>
+
+
+
+  <script src="script.js"></script>

@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Techolas Technologies-Python</title>
+
+  <!-- favicon link  -->
+  <link rel="icon" href="/icon/Techolas-lcon.png">
+
+  <!-- css link  -->
+  <link rel="stylesheet" href="datascience.css">
+
+  <!-- tailwind cdn link  -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <!-- google font:poppins link  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <style>
+
+  </style>
+</head>
+
+<body>
+
+  <header>
+
+    <!-- main-navbar  -->
+    <nav class="flex justify-between items-center px-5 pt-2 h-20 fixed top-0 left-0 w-full bg-white z-100">
+
+      <!-- logo  -->
+      <a href="index.html">
+        <img src="/icon/Techolas-logo.webp" alt="" class="w-40 sm:w-45 ">
+      </a>
+
+      <!-- navlinks  -->
+      <div class="nav-container">
+        <a href="index.html#home" class="nav-link">home</a>
+        <a href="index.html#about" class="nav-link">About</a>
+        <a href="index.html#courses" class="nav-link">courses</a>
+        <a href="index.html#placement" class="nav-link">placements</a>
+        <a href="index.html#contacts" class="nav-link" id="contact">contact</a>
+      </div>
+
+      <!-- menulogo  -->
+      <img src="/icon/menu.png" alt="" id="menu" onclick=" shownav()">
+
+    </nav>
+
+    <!-- side-navbar  -->
+    <nav class="sidenav">
+
+      <!-- closelogo  -->
+      <img src="/icon/x-solid.png" alt="" class="close" onclick="closenav()">
+
+      <!-- side-navlinks  -->
+      <div class="side-nav-container">
+        <a href="index.html#home" class="nav-link" onclick="closenav()">home</a>
+        <a href="index.html#about" class="nav-link" onclick="closenav()">About</a>
+        <a href="index.html#courses" class="nav-link" onclick="closenav()">courses</a>
+        <a href="index.html#placement" class="nav-link" onclick="closenav()">placements</a>
+        <a href="index.html#contacts" class="nav-link" id="contact" onclick="closenav()">contact</a>
+      </div>
+
+    </nav>
+
+
+  </header>
+
+  <img src="/images/py carosel.png" alt="" class="w-full mt-20">
+  <main class="px-10">
+
+    <section id="ds-section">
+      <div class="ds">
+        <h1>Course Description</h1>
+        <p>Our Python Full Stack Development Course in Calicut offers comprehensive, hands-on training in both front-end
+          and back-end web development. Learners gain strong backend expertise using Python, Django, REST APIs, and
+          MySQL, enabling them to build secure, scalable, and production-ready applications. On the front end, the
+          course covers HTML, CSS, JavaScript, jQuery, React JS, and Ajax, helping students create responsive and
+          interactive user interfaces.</p>
+
+        <p>The program also includes Git and version control practices, preparing learners for real-world team
+          collaboration and professional workflows. Designed for students, freshers, and working professionals, this
+          course focuses on practical projects and real-time use cases, ensuring learners graduate with the skills
+          needed to build complete web applications and start a successful career as a Python Full Stack Developer</p>
+
+
+      </div>
+
+      <div class="box">
+        <h2>Courses details</h2>
+        <h4>Durations : <span>7 Months</span></h4>
+        <h4>Lessons : <span>5 Days a Week</span></h4>
+        <h4>Language : <span>Malayalam,English</span></h4>
+        <h4>Registration Fees : <span>500rs</span></h4>
+
+      </div>
+    </section>
+
+    <button id="overview"
+      class="px-5 py-2 border-1 border-grey rounded-lg hover:bg-[var(--main-color)] hover:border-white m-3 font-semibold"
+      onclick=" btnoverview()">overview</button>
+    <button id="Curriculum"
+      class="px-5 py-2 border-1 border-grey rounded-lg hover:bg-[var(--main-color)] hover:border-white m-3 font-semibold"
+      onclick="btncurriculumdiv()">Curriculum</button>
+
+
+
+    <section id="overview-div">
+      The Python Full Stack Development Course in Calicut is designed to provide learners with complete end-to-end web
+      development skills by combining powerful backend programming with modern front-end technologies. Students begin by
+      building a strong foundation in HTML, CSS, JavaScript, jQuery, and React JS, enabling them to create responsive,
+      dynamic, and visually engaging user interfaces.
+
+      <br><br>
+
+      As the course progresses into backend development, learners work extensively with Python and Django, mastering
+      server-side logic, authentication, template rendering, and MVC architecture. The program also includes hands-on
+      training in REST API development, allowing seamless communication between front-end applications and backend
+      services.
+
+      <br><br>
+
+      To support data-driven applications, the course offers practical experience with MySQL, covering database design,
+      querying, and integration with Django. Students additionally learn to implement Ajax for asynchronous
+      communication, enhancing user experience through real-time updates without page reloads.
+
+      <br><br>
+
+      The program concludes with essential development practices using Git and version control, preparing learners for
+      collaborative workflows and professional project environments. By the end of the course, students are equipped to
+      build production-ready full-stack web applications and confidently pursue careers as Python Full Stack Developers.
+    </section>
+
+    <section id="curriculum-div">
+      <h1>MODULE 1</h1>
+
+      <h3>HTML</h3>
+
+      <h3>Section 1</h3>
+
+      <p>● The HTML5 Blueprint: Mastering the professional boilerplate, Document Type Definitions (!DOCTYPE), and
+        language attributes.</p>
+
+      <p>● Head Metadata: Configuring character encoding (UTF-8), viewport settings for responsiveness, and SEO-friendly
+        meta tags.</p>
+
+      <p>● Semantic Layouts: Structural organization using &lt;header&gt;, &lt;main&gt;, &lt;section&gt;,
+        &lt;article&gt;, and &lt;footer&gt; for high accessibility and SEO ranking.</p>
+
+      <p>● Global Attributes: Mastering universal attributes like id, class, title, and data-* for JavaScript and CSS
+        integration.</p>
+
+      <h3>Section 2</h3>
+
+      <p>● Forms &amp; Validation: Building complex user interfaces with &lt;form&gt;, &lt;label&gt;, and various
+        &lt;input&gt; types.</p>
+
+      <p>● Head Metadata: Configuring character encoding (UTF-8), viewport settings for responsiveness, and SEO-friendly
+        meta tags.</p>
+
+      <p>● Client-Side Security: Utilizing HTML5 validation attributes like required, pattern, min/max, and readonly to
+        ensure data integrity.</p>
+
+      <p>● Interactive Controls: Implementing &lt;button&gt;, &lt;select&gt;, and &lt;textarea&gt; for rich user
+        feedback and data collection.</p>
+
+      <h3>Section 3</h3>
+
+      <p>● Table Architecture: Designing structured data layouts using &lt;table&gt;, &lt;tr&gt;, &lt;th&gt;, and
+        &lt;td&gt;, including advanced colspan and rowspan usage.</p>
+
+      <p>● Hyperlinks &amp; Lists: Creating internal/external hyperlinks with the &lt;a&gt; tag and using structured
+        lists (&lt;ul&gt;, &lt;ol&gt;) for navigation.</p>
+
+      <p>● Media &amp; Integration: Embedding responsive images, videos, audio, and external content using
+        &lt;iframe&gt;.</p>
+
+        <h1>MODULE 2</h1>
+
+<h3>CSS – STYLING &amp; LAYOUT</h3>
+
+<h3>Section 1</h3>
+
+<p>● CSS Architecture &amp; The Box Model</p>
+
+<p>● Types of CSS: Mastering the three methods of implementation—Inline (style attribute), Internal (style tag), and External (linked .css files).</p>
+
+<p>● Selectors &amp; Specificity: Understanding the CSS Cascade, ID vs. Class selectors, and Pseudo-classes (:hover, :active, :nth-child).</p>
+
+<p>● The Box Model: Complete mastery of Content, Padding, Border, and Margin; utilizing <code>box-sizing: border-box</code> for predictable sizing.</p>
+
+<p>● Modern Units: Moving beyond pixels to fluid units—rem, em, %, vh, and vw—for scalable design.</p>
+
+<h3>Section 2</h3>
+
+<p>● Layout Engines &amp; Positioning</p>
+
+<p>● Flexbox (1D Layouts): Mastering flex-direction, justify-content, align-items, and flex-grow for dynamic row/column alignment.</p>
+
+<p>● CSS Grid (2D Layouts): Building complex web structures using grid-template-areas, gap, and the fr unit.</p>
+
+<p>● Positioning &amp; Flow: Understanding static, relative, absolute, fixed, and sticky positioning techniques.</p>
+
+<p>● Display Properties: Understanding the behavior of block, inline, inline-block, and none.</p>
+
+<h3>Section 3</h3>
+
+<p>● Visual Design &amp; Responsiveness</p>
+
+<p>● Styling Basics: Mastering Colors (HEX, RGB, HSL), Backgrounds (Gradients, Images), and Typography (Google Fonts).</p>
+
+<p>● Mobile-First Strategy: Implementing Media Queries to create seamless experiences across mobile, tablet, and desktop.</p>
+
+<p>● Advanced Visuals: Utilizing CSS Variables for theme management and creating smooth Transitions, Animations, and Transforms.</p>
+
+<p>● Flexibility: Handling overflow, text-truncation, and aspect-ratio for modern UI components.</p>
+
+<h1>MODULE 3</h1>
+
+<h3>TAILWIND CSS</h3>
+
+<h3>Section 1</h3>
+
+<p>● Setup &amp; Core Philosophy</p>
+
+<p>● Installation &amp; Integration: Setting up Tailwind via Play CDN for prototyping and NPM/PostCSS for production-grade builds.</p>
+
+<p>● The Utility-First Mindset: Transitioning from traditional CSS files to inline utility classes for faster development.</p>
+
+<p>● Configuration: Customizing the <code>tailwind.config.js</code> file to define custom color palettes, spacing scales, and font families.</p>
+
+<p>● Standard Case: Building a styled button or card component entirely within HTML classes without writing custom CSS.</p>
+
+<h3>Section 2</h3>
+
+<p>● Responsive &amp; State Logic</p>
+
+<p>● Mobile-First Modifiers: Implementing fluid layouts using screen-size prefixes like <code>sm:</code>, <code>md:</code>, <code>lg:</code>, and <code>xl:</code>.</p>
+
+<p>● Interactive States: Managing UI feedback using state modifiers such as <code>hover:</code>, <code>focus:</code>, <code>active:</code>, and <code>group-hover:</code>.</p>
+
+<p>● Dark Mode Strategy: Implementing a native dark theme using the <code>dark:</code> modifier and toggling via system preferences or manual switch.</p>
+
+<p>● Typography &amp; Spacing: Mastering typography, padding, and margin utility scales.</p>
+
+<h3>Section 3</h3>
+
+<p>● Component Patterns &amp; Optimization</p>
+
+<p>● Style Reuse: Utilizing the <code>@apply</code> directive to extract repetitive utility patterns into reusable CSS components.</p>
+
+<p>● Layout Shells: Building complex application containers using Tailwind's built-in Flexbox and Grid utilities.</p>
+
+<p>● JIT (Just-In-Time) Engine: Leveraging the dynamic compiler to generate only the CSS you use, keeping file sizes small.</p>
+
+<p>● Custom Plugins: Extending Tailwind's functionality with official plugins for Forms, Typography, and Aspect Ratio.</p>
+
+<h1>MODULE 4</h1>
+
+<h3>JAVASCRIPT CORE &amp; LOGIC</h3>
+
+<h3>Section 1</h3>
+
+<p>● Modern Foundations</p>
+
+<p>● Execution Control &amp; Timing: External script integration, <code>console.log()</code> debugging, and modern variable declarations (<code>let</code>, <code>const</code>).</p>
+
+<p>● Data Representation: Primitive vs Non-Primitive (Objects/Arrays), hoisting concepts, and object &amp; array copying (shallow vs deep copy).</p>
+
+<p>● Operators &amp; Branching: Mastering Arithmetic, Logical, and Ternary Operators for concise conditional logic.</p>
+
+<p>● Control Flow: Advanced if-else structures, switch cases, and modern looping (<code>for...of</code>, <code>while</code>, nested loops).</p>
+
+<p>● Timers: <code>setTimeout()</code>, <code>setInterval()</code>, clearing timers, and introduction to the Event Loop.</p>
+
+<h3>Section 2</h3>
+
+<p>● Functional Architecture</p>
+
+<p>● The Arrow Era: Mastering Arrow Functions (<code>() =&gt; {}</code>) and their unique behavior with the <code>this</code> keyword.</p>
+
+<p>● Special Patterns: Working with Anonymous Functions and IIFE (Immediately Invoked Function Expressions).</p>
+
+<p>● Scope &amp; Closures: Understanding Global vs Local Scope and how closures retain access to outer environments.</p>
+
+<p>● Parameter Handling: Default Parameters, Rest Parameters (<code>...args</code>), and the difference between arguments and parameters.</p>
+
+<h3>Section 3</h3>
+
+<p>● Asynchronous Programming</p>
+
+<p>● The Async Journey: Evolution from Callbacks to Promises (<code>resolve</code>, <code>reject</code>).</p>
+
+<p>● Modern Async: Implementation of Async/Await for clean, readable asynchronous code.</p>
+
+<p>● ES6+ Data Unpacking: Mastering Destructuring Assignment and the Spread Operator.</p>
+
+<p>● Predefined Utilities: Built-in String, Math, and Date functions.</p>
+
+<p>● Error Handling &amp; Debugging: <code>try...catch...finally</code>, Promise error handling, and Async/Await error handling.</p>
+
+<h3>Section 4</h3>
+
+<p>● DOM &amp; Web APIs</p>
+
+<p>● Modern Selection: Using <code>querySelector()</code> and <code>querySelectorAll()</code>.</p>
+
+<p>● Dynamic UI Construction: Creating, appending, and removing elements; <code>textContent</code> vs <code>innerHTML</code>.</p>
+
+<p>● Fetch API &amp; API Integration: Working with GET, POST, PUT, and DELETE requests using JSON data.</p>
+
+<p>● Object-Oriented JavaScript: Introduction to Classes and Inheritance.</p>
+
+<h3>Section 5</h3>
+
+<p>● Event Handling &amp; Validation</p>
+
+<p>● Event Architecture: Mouse, Keyboard, and Window events (<code>click</code>, <code>keydown</code>, <code>load</code>).</p>
+
+<p>● Form Logic: Managing submit events, input states, and Regex-based validation.</p>
+
+<p>● Third-Party Integration: Browser-based email automation using EmailJS.</p>
+
+<h3>Section 6</h3>
+
+<p>● Browser Storage &amp; Persistence</p>
+
+<p>● Web Storage API: Persisting user data using <code>localStorage</code> and <code>sessionStorage</code>.</p>
+
+<h1>MODULE 5</h1>
+
+<h3>TYPESCRIPT</h3>
+
+<h3>Section 1</h3>
+
+<p>● Foundations &amp; Type System</p>
+
+<p>● TS Architecture: Compiler configuration (<code>tsconfig.json</code>), strict mode flags, and the transpilation process.</p>
+
+<p>● Core Annotations: Defining types for variables, arrays, and functions (<code>void</code>, <code>never</code>, <code>unknown</code>).</p>
+
+<p>● Advanced Shapes: Mastering Interfaces and Type Aliases for complex object and API data modeling.</p>
+
+<p>● Flexibility: Using Union Types and Literal Types (e.g., <code>type Status = "success" | "error"</code>) for state safety.</p>
+
+<h3>Section 2</h3>
+
+<p>● Advanced TS &amp; Browser Safety</p>
+
+<p>● Generics (&lt;T&gt;): Creating reusable, type-safe functions and components for large-scale applications.</p>
+
+<p>● Utility Types: Mastering built-in helpers like <code>Partial</code>, <code>Pick</code>, and <code>Omit</code> to transform existing data shapes.</p>
+
+<p>● Discriminated Unions: Handling complex UI states using type narrowing and literal properties.</p>
+
+<p>● TS in the Browser: Type Casting (<code>as HTMLInputElement</code>) and safely typing DOM Events and Promises.</p>
+
+<h1>MODULE 6</h1>
+
+<h3>REACT.JS WITH TYPESCRIPT</h3>
+
+<h3>Section 1</h3>
+
+<p>● Modern Component Architecture</p>
+
+<p>● Functional Ecosystem: Building UI using Functional Components, JSX/TSX syntax, and the Virtual DOM.</p>
+
+<p>● Type-Safe Props: Defining interfaces for component properties to ensure data integrity across the UI.</p>
+
+<p>● Component Lifecycle: Understanding the mounting, updating, and unmounting phases in a modern hook-based environment.</p>
+
+<p>● Styling Integration: Implementing Tailwind CSS within React components for rapid and responsive UI development.</p>
+
+<p>● Composition: Mastering component nesting, children props, and creating reusable UI libraries.</p>
+
+<h3>Section 2</h3>
+
+<p>● React Hooks &amp; State Management</p>
+
+<p>● State Mastery: Utilizing <code>useState</code> for local data handling and <code>useEffect</code> for managing side effects and API triggers.</p>
+
+<p>● Performance Hooks: Implementing <code>useMemo</code> and <code>useCallback</code> to prevent unnecessary re-renders in complex applications.</p>
+
+<p>● Reference &amp; DOM: Using <code>useRef</code> for direct DOM access and persisting values without triggering renders.</p>
+
+<p>● Context API: Managing theme, authentication, and global configurations without prop drilling.</p>
+
+<p>● Custom Hooks: Designing reusable logic blocks to share functionality between multiple components.</p>
+
+<h3>Section 3</h3>
+
+<p>● Navigation &amp; Data Fetching</p>
+
+<p>● React Router: Implementing dynamic routing, nested routes, and URL parameters for Single Page Applications (SPAs).</p>
+
+<p>● Protected Routes: Creating authentication guards to restrict access to specific pages based on user status.</p>
+
+<p>● API Integration: Using Axios for robust HTTP requests and handling complex loading and error states.</p>
+
+<p>● JSON Server (Mock Backend): Creating a local API for testing and development while practicing CRUD operations.</p>
+
+<p>● Form Handling: Managing controlled components and integrating validation logic for user inputs.</p>
+
+<h1>MODULE 7</h1>
+
+<h3>REDUX TOOLKIT (RTK) – GLOBAL STATE</h3>
+
+<h3>Section 1</h3>
+
+<p>● Store &amp; Slice Architecture</p>
+
+<p>● Centralized Store: Configuring the "Single Source of Truth" using <code>configureStore</code> with TypeScript integration.</p>
+
+<p>● State Slicing: Organizing logic into modular slices using <code>createSlice</code> for maintainable and scalable code.</p>
+
+<p>● Immutability: Handling state updates safely using the built-in Immer library logic within Redux Toolkit.</p>
+
+<h3>Section 2</h3>
+
+<p>● Dispatching &amp; Data Selection</p>
+
+<p>● Action Logic: Using <code>useDispatch</code> to trigger state changes from any component in the application.</p>
+
+<p>● State Selection: Utilizing <code>useSelector</code> with memoized selectors for efficient data retrieval.</p>
+
+<h3>Section 3</h3>
+
+<p>● Advanced Asynchronous Logic</p>
+
+<p>● Async Thunks: Managing complex asynchronous workflows and API calls using <code>createAsyncThunk</code>.</p>
+
+<p>● RTK Query: Automating data fetching, caching, and server-state synchronization to reduce boilerplate code.</p>
+
+<p>● Middleware: Implementing custom middleware for logging, error tracking, and persistent state management.</p>
+
+<p>● Full Stack Bridge: Connecting the React-Redux frontend to Django REST Framework for real-time data synchronization.</p>
+
+<h1>MODULE 8</h1>
+
+<h3>PYTHON – BACKEND CORE</h3>
+
+<h3>Section 1</h3>
+
+<p>● Foundations &amp; Logic Flow</p>
+
+<p>● Variable Architecture: Understanding Dynamic Typing, Memory Allocation, and Mutable vs. Immutable Data Types.</p>
+
+<p>● Decision Making: Mastering Conditional Statements (<code>if</code>, <code>elif</code>, <code>else</code>) and Logical Evaluation.</p>
+
+<p>● Iteration Control: Professional use of <code>for</code> and <code>while</code> loops, including <code>break</code>, <code>continue</code>, and <code>pass</code>.</p>
+
+<p>● Advanced Loops: Utilizing <code>enumerate()</code>, <code>zip()</code>, and Comprehensions (List, Dict, Set) for high-speed data processing.</p>
+
+<p>● Data Structures: Deep dive into the performance of Lists, Dictionaries, Sets, and Tuples.</p>
+
+<h3>Section 2</h3>
+
+<p>● Functional Programming, Scoping &amp; Core Runtime Handling</p>
+
+<p>● Function Mastery: Defining reusable logic, return values, and understanding the LEGB Scoping Rule.</p>
+
+<p>● Flexible Arguments: Handling dynamic inputs using <code>*args</code> and <code>**kwargs</code> (essential for Django middleware).</p>
+
+<p>● Functional Tools: Using Lambda Functions, <code>map()</code>, <code>filter()</code>, and the high-performance <code>itertools</code> library.</p>
+
+<p>● Namespace Management: Understanding how Python resolves variables across different modules and functions.</p>
+
+<p>● Exception Handling &amp; Error Management: Handling syntax, runtime, and logical errors using <code>try</code>, <code>except</code>, <code>else</code>, and <code>finally</code>. Creating and raising custom exceptions for robust backend applications.</p>
+
+<p>● File Handling: Performing file operations using <code>open()</code> modes (<code>r</code>, <code>w</code>, <code>a</code>, <code>x</code>) with the <code>with</code> statement for safe file handling.</p>
+
+<p>● Directory &amp; File System Management: Managing directories and files using <code>os</code>, <code>os.path</code>, and <code>pathlib</code>. Creating, renaming, deleting files and folders, handling paths, and automating file operations.</p>
+
+<h3>Section 3</h3>
+
+<p>● Professional OOP (Object-Oriented Programming)</p>
+
+<p>● Class Mechanics: Creating blueprints, the <code>self</code> keyword, and mastering the <code>__init__</code> constructor.</p>
+
+<p>● Inheritance &amp; Mixins: Building child classes and reusable logic "mixins" for Django views.</p>
+
+<p>● Encapsulation: Protecting data with private attributes and the <code>@property</code> decorator.</p>
+
+<p>● Polymorphism: Writing flexible code that handles different object types through method overriding.</p>
+
+<p>● Abstraction: Using Abstract Base Classes (ABC) to enforce strict system blueprints.</p>
+
+<p>● Magic Methods: Customizing object behavior using Dunder methods such as <code>__str__</code>, <code>__repr__</code>, and <code>__call__</code>.</p>
+
+<h3>Section 4</h3>
+
+<p>● Advanced Backend Engineering (Meta-Programming)</p>
+
+<p>● Decorators (<code>@</code>): Creating and applying custom decorators for Authentication, Logging, and Rate Limiting.</p>
+
+<p>● Generators &amp; Iterators: Using <code>yield</code> to process massive database results efficiently without exhausting server memory.</p>
+
+<p>● Environment Control: Professional project isolation using Virtual Environments (<code>venv</code>) and dependency management with <code>pip</code>.</p>
+
+<p>● Modular Architecture: Creating packages, handling absolute and relative imports, and preventing circular dependencies.</p>
+
+<h1>MODULE 9</h1>
+
+<h3>POSTGRESQL – ADVANCED DATABASE</h3>
+
+<h3>Section 1</h3>
+
+<p>● SQL Fundamentals &amp; Architecture (Week 1)</p>
+
+<p>● Environment &amp; DDL: Installing PostgreSQL, configuring pgAdmin, and mastering <code>CREATE</code>, <code>ALTER</code>, and <code>DROP</code> for table management.</p>
+
+<p>● Data Manipulation (DML): Standard CRUD operations (<code>INSERT</code>, <code>UPDATE</code>, <code>DELETE</code>) and advanced filtering using <code>WHERE</code>, <code>LIKE</code>, and <code>ORDER BY</code>.</p>
+
+<p>● PostgreSQL Data Types: Working with specialized types including <code>UUID</code>, <code>TIMESTAMP</code>, and high-performance <code>JSONB</code>.</p>
+
+<h3>Section 2</h3>
+
+<p>● Schema Design &amp; Relational Logic (Week 2)</p>
+
+<p>● Normalization &amp; Keys: Applying 1NF, 2NF, and 3NF; implementing Primary, Foreign, and Composite Keys.</p>
+
+<p>● Integrity Constraints: Enforcing business rules with <code>NOT NULL</code>, <code>UNIQUE</code>, <code>CHECK</code>, and <code>DEFAULT</code>.</p>
+
+<p>● Relational Mapping: Designing and managing One-to-One, One-to-Many, and Many-to-Many relationships.</p>
+
+<h3>Section 3</h3>
+
+<p>● Complex Queries &amp; Reporting (Week 2)</p>
+
+<p>● Advanced Joins &amp; Sets: Mastering INNER, LEFT, RIGHT, FULL OUTER Joins, UNION, and INTERSECT.</p>
+
+<p>● Aggregations &amp; Analytics: Using <code>GROUP BY</code>, <code>HAVING</code>, and Window Functions (<code>RANK</code>, <code>ROW_NUMBER</code>).</p>
+
+<p>● Modular Logic: Utilizing Common Table Expressions (CTEs) and Subqueries for readable and efficient SQL.</p>
+
+<h3>Section 4</h3>
+
+<p>● Performance &amp; Data Security (Week 2)</p>
+
+<p>● Transaction Safety: Ensuring data integrity using ACID Properties and Transaction Control (<code>COMMIT</code>, <code>ROLLBACK</code>, <code>SAVEPOINT</code>).</p>
+
+<p>● Optimization Tools: Improving performance using B-Tree &amp; GIN Indexes and analyzing queries with <code>EXPLAIN ANALYZE</code>.</p>
+
+<p>● Advanced Features: Implementing Upsert operations and Database Views for simplified data access.</p>
+
+<h1>MODULE 10</h1>
+
+<h3>DJANGO – BACKEND FRAMEWORK (WEEK 1 &amp; 2)</h3>
+
+<h3>Section 1</h3>
+
+<p>● Environment &amp; Architecture</p>
+
+<p>● Installation &amp; Setup: Managing Virtual Environments, installing Django using <code>pip</code>, and creating projects with <code>django-admin</code>.</p>
+
+<p>● MVT Architecture: Understanding the Model-View-Template pattern and the HTTP Request/Response lifecycle.</p>
+
+<p>● Project Structure: Working with <code>settings.py</code>, <code>urls.py</code>, <code>manage.py</code>, and Django apps.</p>
+
+<p>● Basic Case (Hello World): Routing URLs to Function-Based Views (FBVs) and rendering HTML templates.</p>
+
+<h3>Section 2</h3>
+
+<p>● Database &amp; The Django ORM</p>
+
+<p>● PostgreSQL Integration: Configuring PostgreSQL and managing migrations using <code>makemigrations</code> and <code>migrate</code>.</p>
+
+<p>● Data Modeling: Creating database tables using Django Models (<code>CharField</code>, <code>IntegerField</code>, <code>ForeignKey</code>).</p>
+
+<p>● QuerySet API: Performing CRUD operations using <code>.create()</code>, <code>.get()</code>, <code>.filter()</code>, and <code>.all()</code>.</p>
+
+<p>● Admin Engine: Registering models in the Django Admin Panel for secure data management.</p>
+
+<h3>Section 3</h3>
+
+<p>● Forms, Authentication &amp; Security</p>
+
+<p>● User Authentication: Implementing Login, Logout, and User Registration.</p>
+
+<p>● ModelForms: Automatically generating HTML forms with built-in validation.</p>
+
+<p>● Backend Security: Using CSRF Tokens, Password Hashing, and <code>@login_required</code>.</p>
+
+<p>● Middleware: Understanding request processing, security, and session management.</p>
+
+<h1>MODULE 11</h1>
+
+<h3>DJANGO REST FRAMEWORK (DRF)</h3>
+
+<h3>Section 1</h3>
+
+<p>● REST API Foundations</p>
+
+<p>● DRF Setup: Installing <code>djangorestframework</code>, configuring <code>INSTALLED_APPS</code>, and <code>REST_FRAMEWORK</code> settings.</p>
+
+<p>● Serialization: Creating <code>ModelSerializer</code> classes to convert Django models into JSON.</p>
+
+<p>● Basic CRUD API: Building List/Create APIs using <code>APIView</code> with GET and POST methods.</p>
+
+<p>● Standard Responses: Working with the <code>Response</code> object and HTTP Status Codes (200, 201, 400).</p>
+
+<h3>Section 2</h3>
+
+<p>● Professional API Design</p>
+
+<p>● Generic Views &amp; ViewSets: Using <code>ListCreateAPIView</code> and <code>ModelViewSet</code> to reduce boilerplate.</p>
+
+<p>● URL Routers: Implementing RESTful routing using <code>DefaultRouter</code>.</p>
+
+<p>● Request Parsing: Handling JSON request bodies and query parameters.</p>
+
+<p>● Mixins: Using reusable mixins to extend API functionality.</p>
+
+<h3>Section 3</h3>
+
+<p>● Security &amp; Production Operations</p>
+
+<p>● JWT Authentication: Implementing SimpleJWT for secure authentication.</p>
+
+<p>● Permissions: Using <code>IsAuthenticated</code> and <code>IsAdminUser</code> permission classes.</p>
+
+<p>● CORS Configuration: Configuring <code>django-cors-headers</code> for frontend communication.</p>
+
+<p>● API Documentation: Generating Swagger and ReDoc documentation.</p>
+
+<p>● Deployment Readiness: Managing environment variables, production settings, and static/media files.</p>
+
+    </section>
+
+
+
+
+
+
+  </main>
+
+  <footer class="h-16 bg-[var(--main-color)] flex justify-center items-center ">
+    &copy; 2026 techolas technologies.all rights reserved
+  </footer>
+
+
+
+  <script src="script.js"></script>

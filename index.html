@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Techolas Technologies</title>
+
+  <!-- favicon link  -->
+  <link rel="icon" href="/icon/Techolas-lcon.png">
+
+  <!-- css link  -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- tailwind cdn link  -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <!-- google font:poppins link  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+
+    <!-- main-navbar  -->
+    <nav class="flex justify-between items-center px-5 pt-2 h-20 fixed top-0 left-0 w-full bg-white z-100">
+
+      <!-- logo  -->
+      <a href="">
+        <img src="/icon/Techolas-logo.webp" alt="" class="w-40 sm:w-45 ">
+      </a>
+
+      <!-- navlinks  -->
+      <div class="nav-container">
+        <a href="#home" class="nav-link">home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#courses" class="nav-link">courses</a>
+        <a href="#placement" class="nav-link">placements</a>
+        <a href="#contacts" class="nav-link" id="contact">contact</a>
+      </div>
+
+      <!-- menulogo  -->
+      <img src="/icon/menu.png" alt="" id="menu" onclick=" shownav()">
+
+    </nav>
+
+    <!-- side-navbar  -->
+    <nav class="sidenav">
+
+      <!-- closelogo  -->
+      <img src="/icon/x-solid.png" alt="" class="close" onclick="closenav()">
+
+      <!-- side-navlinks  -->
+      <div class="side-nav-container">
+        <a href="#home" class="nav-link" onclick="closenav()">home</a>
+        <a href="#about" class="nav-link" onclick="closenav()">About</a>
+        <a href="#courses" class="nav-link" onclick="closenav()">courses</a>
+        <a href="#placement" class="nav-link" onclick="closenav()">placements</a>
+        <a href="#contacts" class="nav-link" onclick="closenav()">contact</a>
+      </div>
+
+    </nav>
+
+
+  </header>
+
+  <!-- main  -->
+  <main class="px-10">
+
+    <!-- home section  -->
+    <section id="home">
+
+      <!-- text  -->
+      <div class="flex-5 ">
+        <h1>kerala's no.1 software training <span>institute</span></h1>
+
+        <p>Techolas Technologies is the best software training institute in Calicut, Kerala delivering job-oriented
+          courses in Data Analytics, Data Analytics with GEN-AI, Data Science, Python Full Stack, MERN Stack and
+          Business Analytics. Our industry-aligned curriculum, hands-on projects, and expert trainers help students and
+          working professionals gain practical skills that meet current IT industry demands. With a focus on quality
+          training and dedicated placement support, Techolas Calicut has become a leading choice for software and IT
+          training across Calicut and Kerala.</p>
+
+        <a href="#contacts">
+          <button>Enroll Now</button>
+        </a>
+
+      </div>
+
+      <div class="flex-3 ">
+        <img src="/images/techolas hero img.webp" alt="" class="w-150">
+      </div>
+
+    </section>
+
+    <!-- about section  -->
+
+    <section id="about" class="flex flex-col pt-20 pb-20">
+      <h1>who we are</h1>
+
+      <p><span class="font-bold">Techolas Technologies is a trusted software training institute in Calicut, Kerala,
+          focused on shaping future IT professionals through industry-focused and career-oriented training programs.
+        </span>With a strong commitment to quality education.
+
+        Techolas offers comprehensive training in Data Analytics, Python Full Stack, MERN Stack, Data Science, Business
+        Analytics, Data Analytics with Gen-Ai and other in-demand technologies. Our expert trainers, practical learning
+        methodology, and placement-oriented programs help students gain real-world technical skills and build successful
+        careers in the fast-growing IT industry.</p>
+
+      <p>We specialize in advanced software and data analytics training in Calicut, delivering beginner-friendly and
+        career-transition programs designed for students, working professionals, and graduates seeking the right entry
+        point into the IT sector. Whether you are a bachelor’s or master’s degree holder, a working professional, or
+        someone looking to restart or switch careers, Techolas helps you build a clear and scalable career path in
+        technology.
+
+        At Techolas, learning is guided by experienced industry professionals who bring real-world insights into the
+        classroom. Our industry-aligned curriculum is continuously updated based on current market needs and feedback
+        from hiring partners. Our key training areas include Data Science, Python Full Stack, MERN Stack, Data
+        Analytics, Data Analytics with GEN AI and Business Analytics. With a strong focus on placements and a training
+        environment that reflects real-world IT work culture, Techolas continues to be a reliable gateway for students
+        and professionals aiming to access quality job opportunities in Kerala’s IT ecosystem.</p>
+
+
+      <div>
+        <a href="about.html"><button>Read more</button></a>
+      </div>
+
+    </section>
+
+    <!-- course section  -->
+    <section id="courses" class="pt-20 pb-50">
+      <h1>our courses</h1>
+
+      <div class="grid  gap-10 place-items-center max-sm:grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+
+        <div class="card">
+          <img src="/images/datascience.webp" alt="">
+          <h3>data science</h3>
+          <p>8 months</p>
+          <a href="datascience.html"><button class="btn">view details</button></a>
+        </div>
+        <div class="card">
+          <img src="/images/analytics.webp" alt="">
+          <h3>data analytics</h3>
+          <p>8 months</p>
+          <a href="da.html"><button class="btn">view details</button></a>
+        </div>
+        <div class="card">
+          <img src="/images/python.webp" alt="">
+          <h3>python full stack</h3>
+          <p>7 months</p>
+          <a href="python.html"><button class="btn">view details</button></a>
+        </div>
+        <div class="card">
+          <img src="/images/mern.webp" alt="">
+          <h3>MERN stack</h3>
+          <p>7 months</p>
+          <a href="mern.html"><button class="btn">view details</button></a>
+        </div>
+        <div class="card">
+          <img src="/images/business analytics.webp" alt="">
+          <h3>business analytics</h3>
+          <p>5 months</p>
+          <a href="bussines.html"><button class="btn">view details</button></a>
+        </div>
+        <div class="card">
+          <img src="/images/software testing.webp" alt="">
+          <h3>software testing</h3>
+          <p>3 months</p>
+          <a href="software.html"><button class="btn">view details</button></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- placement  -->
+
+    <section id="placement" class="pt-20 pb-50 flex flex-col justify-center ">
+      <h1>recent placements</h1>
+      <div class="grid  gap-10 place-items-center max-sm:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        <div class='items'> <img src="/images/placement-1.jpeg" alt="" /></div>
+        <div class='items'> <img src="/images/placement-2.jpeg" alt="" /></div>
+        <div class='items'> <img src="/images/placement-3.jpeg" alt="" /></div>
+        <div class='items'> <img src="/images/placement-4.jpeg" alt="" /></div>
+        <div class='items'> <img src="/images/placement-5.jpeg" alt="" /></div>
+        <div class='items'> <img src="/images/placement-6.jpeg" alt="" /></div>
+        <div class='items'> <img src="/images/placement-7.jpeg" alt="" /></div>
+        <div class='items'> <img src="/images/placement-8.jpeg" alt="" /></div>
+        <div class='items'> <img src="/images/placement-9.jpeg" alt="" /></div>
+        <div class='items'> <img src="/images/placement-10.jpeg" alt="" /></div>
+        <div class='items'> <img src="/images/placement-11.jpeg" alt="" /></div>
+        <div class='items'> <img src="/images/placement-12.jpeg" alt="" /></div>
+
+      </div>
+
+      <div class="flex justify-center">
+        <a href="placement.html"> <button class="placementbtn"> view all</button> </a>
+      </div>
+
+    </section>
+
+    <!-- contact  -->
+    <section id="contacts" class="flex gap-10 pt-30 pb-50 max-md:flex-col ">
+      <div class="flex flex-col flex-5">
+        <h3>stay connected with us</h3>
+        <p class="mb-5">If you require clarifications on any of the courses or the admission process, we are happy to
+          help.</p>
+        <div class="flex justify-start items-center gap-2 mb-2">
+          <img src="/icon/call.png" alt="" class="w-6">
+          <span class="text-lg">0987654321</span>
+        </div>
+        <div class="flex justify-start items-center gap-2 mb-10">
+          <img src="/icon/email-black.png" alt="" class="w-6 ">
+          <span class="text-lg">techolas@gmail.com</span>
+        </div>
+        <div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3913.0367377812945!2d75.77876647481231!3d11.258707788920917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba65b2db706f6c3%3A0x88e33c099158e5f6!2sTECHOLAS%20TECHNOLOGIES%20PVT%20LTD!5e0!3m2!1sen!2sin!4v1786037123326!5m2!1sen!2sin"
+            width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+
+
+      </div>
+
+      <form onsubmit="return validateform()" class="flex flex-col gap-2 flex-3">
+        <label for="name">name</label>
+        <input type="text" id="name" placeholder="enter your name" required>
+        <label for="email">email</label>
+        <input type="email" id="email" placeholder="enter your email" required>
+        <label for="number">Phone</label>
+        <input type="tel" id="phone" placeholder="enter your number" required>
+        <label for="course">course</label>
+
+        <select id="course" required>
+          <option value="">Select Course</option>
+          <option value="Data Science">Data Science</option>
+          <option value="Data Analytics">Data Analytics</option>
+          <option value="Python Full Stack">Python Full Stack</option>
+          <option value="MERN Stack">MERN Stack</option>
+          <option value="Business Analytics">Business Analytics</option>
+          <option value="Software Testing">Software Testing</option>
+        </select>
+
+        <label for="messege">messege</label>
+        <textarea id="messege" placeholder="enter your messege" ></textarea>
+        <button type="submit">submit</button>
+      </form>
+
+      <!-- Success message -->
+      <div id="success" class="msg">
+        <div class="msg-content">
+
+          <h2>Thank You!</h2>
+          <p>Your enquiry has been received successfully.</p>
+          <p>We will contact you soon.</p>
+          <button onclick="closemsg()">OK</button>
+
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer class="h-16 bg-[var(--main-color)] flex justify-center items-center ">
+    &copy; 2026 techolas technologies.all rights reserved
+  </footer>
+
+ <!-- emailjs library  -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+
+ <!-- emailjs initialize code  -->
+  <script type="text/javascript">
+    emailjs.init("o_Vvd8M3kQvJo23XD"); //public key  
+  </script>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

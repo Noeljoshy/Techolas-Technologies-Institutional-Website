@@ -1,0 +1,197 @@
+/* common  */
+* {
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  text-transform: capitalize;
+  scroll-behavior: smooth;
+
+}
+
+:root {
+  --main-color: #ee9c03;
+}
+
+body {
+  color: black;
+  background-color: white;
+}
+
+/* navbar  */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+
+}
+
+.nav-link {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 500;
+  /* margin: 0 20px; */
+  transition: 0.2s ease-in-out;
+
+}
+
+.nav-link:hover {
+  color: var(--main-color);
+  scale: 1.1;
+}
+
+#contact {
+  padding: 5px 10px;
+  color: var(--main-color);
+  border-radius: 10px;
+  transition: 0.2s ease-in-out;
+
+}
+
+#contact:hover {
+  padding: 5px 10px;
+  color: white;
+  background-color: #fbb531;
+  border-radius: 10px;
+  scale: 1.1.;
+}
+
+#menu {
+  width: 30px;
+  display: none;
+  cursor: pointer;
+}
+
+.close {
+  width: 25px;
+  margin-bottom: 40px;
+  cursor: pointer;
+
+}
+
+/* side nav  */
+.sidenav {
+  background-color: var(--main-color);
+
+  /* box-shadow: 0 0 5px grey; */
+
+  width: 40%;
+  height: 100vh;
+  position: fixed;
+  z-index: 200;
+  top: 0;
+  right: 0;
+  padding: 20px;
+  display: none;
+}
+
+.side-nav-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 10px;
+}
+
+.side-nav-container a:hover {
+  color: white;
+}
+
+.side-nav-container #contact {
+  color: black;
+  padding: 0;
+  border-radius: 0;
+}
+
+.side-nav-container #contact:hover {
+  color: white;
+  background-color: transparent;
+  padding: 0;
+  border-radius: 0;
+}
+
+#about h1 {
+  font-size: 40px;
+  font-weight: 600;
+  color: var(--main-color);
+  text-align: center;
+  margin: 40px 0;
+}
+
+#about p {
+  margin-bottom: 30px;
+  line-height: 30px;
+
+}
+#mission,#vision{
+  padding: 20px;
+  background-color: #fcbb41;
+  border: 2px solid #fcbb41;
+  color: black;
+  transition: 0.3s;
+}
+#mission:hover,#vision:hover{
+  padding: 20px;
+  background-color: white;
+  border: 2px solid var(--main-color);
+  color: black;
+}
+#mission h2,#vision h2{
+font-size: 30px;
+  font-weight: 600;
+  
+}
+#mission p,#vision p{
+color: black;
+}
+
+.quality{
+  padding: 20px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(128, 128, 128, 0.478);
+  transition: 0.3s ease-in-out;
+  text-align: center;
+}
+.quality:hover{
+  scale: 1.05;
+}
+.quality h2{
+  color: var(--main-color);
+  font-size: 20px;
+  font-weight: 500;
+}
+
+
+/* media queries  */
+@media (max-width:992px) {
+  
+  #about h1 {
+    font-size: 50px;
+    margin: 30px 0;
+  }
+ 
+}
+
+@media (max-width:768px) {
+  #menu {
+    width: 30px;
+    display: block;
+  }
+
+  .nav-container {
+    display: none;
+
+  }
+ 
+  #about h1{
+    font-size: 40px;
+    margin: 30px 0;
+  }
+
+
+}

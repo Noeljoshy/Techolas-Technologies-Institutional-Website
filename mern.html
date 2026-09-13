@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Techolas Technologies-Mern Stack</title>
+
+  <!-- favicon link  -->
+  <link rel="icon" href="/icon/Techolas-lcon.png">
+
+  <!-- css link  -->
+  <link rel="stylesheet" href="datascience.css">
+
+  <!-- tailwind cdn link  -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <!-- google font:poppins link  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <style>
+
+  </style>
+</head>
+
+<body>
+
+  <header>
+
+    <!-- main-navbar  -->
+    <nav class="flex justify-between items-center px-5 pt-2 h-20 fixed top-0 left-0 w-full bg-white z-100">
+
+      <!-- logo  -->
+      <a href="index.html">
+        <img src="/icon/Techolas-logo.webp" alt="" class="w-40 sm:w-45 ">
+      </a>
+
+      <!-- navlinks  -->
+      <div class="nav-container">
+        <a href="index.html#home" class="nav-link">home</a>
+        <a href="index.html#about" class="nav-link">About</a>
+        <a href="index.html#courses" class="nav-link">courses</a>
+        <a href="index.html#placement" class="nav-link">placements</a>
+        <a href="index.html#contacts" class="nav-link" id="contact">contact</a>
+      </div>
+
+      <!-- menulogo  -->
+      <img src="/icon/menu.png" alt="" id="menu" onclick=" shownav()">
+
+    </nav>
+
+    <!-- side-navbar  -->
+    <nav class="sidenav">
+
+      <!-- closelogo  -->
+      <img src="/icon/x-solid.png" alt="" class="close" onclick="closenav()">
+
+      <!-- side-navlinks  -->
+      <div class="side-nav-container">
+        <a href="index.html#home" class="nav-link" onclick="closenav()">home</a>
+        <a href="index.html#about" class="nav-link" onclick="closenav()">About</a>
+        <a href="index.html#courses" class="nav-link" onclick="closenav()">courses</a>
+        <a href="index.html#placement" class="nav-link" onclick="closenav()">placements</a>
+        <a href="index.html#contacts" class="nav-link" id="contact" onclick="closenav()">contact</a>
+      </div>
+
+    </nav>
+
+
+  </header>
+
+  <img src="/images/Mern carosal.png" alt="" class="w-full mt-20">
+  <main class="px-10">
+
+    <section id="ds-section">
+      <div class="ds">
+        <h1>Course Description</h1>
+        <p>Our MERN Stack Course in Calicut is a comprehensive full-stack web development program designed to help
+          students and professionals build industry-ready skills. This course covers front-end technologies such as
+          HTML, CSS, and JavaScript, along with popular frameworks and libraries including Bootstrap, jQuery, and
+          React.js.</p>
+
+        <p>On the back-end, you will learn the complete MERN stack – MongoDB for database management, Express.js and
+          Node.js for server-side development, and React for building dynamic user interfaces. The program focuses on
+          real-time projects, practical training, and hands-on coding experience to prepare you for job opportunities in
+          web development.</p>
+
+
+      </div>
+
+      <div class="box">
+        <h2>Courses details</h2>
+        <h4>Durations : <span>7 Months</span></h4>
+        <h4>Lessons : <span>5 Days a Week</span></h4>
+        <h4>Language : <span>Malayalam,English</span></h4>
+        <h4>Registration Fees : <span>500rs</span></h4>
+
+      </div>
+    </section>
+
+    <button id="overview"
+      class="px-5 py-2 border-1 border-grey rounded-lg hover:bg-[var(--main-color)] hover:border-white m-3 font-semibold"
+      onclick=" btnoverview()">overview</button>
+    <button id="Curriculum"
+      class="px-5 py-2 border-1 border-grey rounded-lg hover:bg-[var(--main-color)] hover:border-white m-3 font-semibold"
+      onclick="btncurriculumdiv()">Curriculum</button>
+
+
+
+    <section id="overview-div">
+      Become a versatile full-stack web developer with our comprehensive MERN Stack Course in Calicut. This
+      industry-focused program covers both front-end and back-end technologies required to build modern web
+      applications.
+
+      <br><br>
+
+      You will begin with front-end fundamentals including HTML for structuring web content, CSS for styling, and
+      JavaScript for creating interactive functionality. To strengthen your development skills, you’ll work with popular
+      tools and frameworks such as jQuery for simplified DOM manipulation, Bootstrap for responsive and mobile-first
+      design, and React.js for building dynamic, single-page applications using component-based architecture.
+
+      <br><br>
+
+      The second phase of the program focuses on back-end development using the powerful MERN stack. You will learn
+      MongoDB for flexible NoSQL database management, Node.js for efficient server-side development, and Express.js for
+      building APIs and scalable web applications.
+
+      <br><br>
+
+      By the end of this MERN stack training in Calicut, you will gain hands-on experience in developing and deploying
+      complete full-stack applications from scratch, preparing you for real-world job opportunities in web development.
+    </section>
+
+    <section id="curriculum-div">
+      <h1>Module 1 - HTML</h1>
+
+      <h3>Structure, Elements & Features</h3>
+
+      <h3>Document Architecture & Metadata</h3>
+
+      <p>The HTML5 Blueprint: Mastering the professional boilerplate, Document Type Definitions (!DOCTYPE), and language
+        attributes.</p>
+
+      <p>Head Metadata: Configuring character encoding (UTF-8), viewport settings for responsiveness, and SEO-friendly
+        meta tags.</p>
+
+      <p>Semantic Layouts: Structural organization using &lt;header&gt;, &lt;main&gt;, &lt;section&gt;, &lt;article&gt;,
+        and &lt;footer&gt; for high accessibility and SEO ranking.</p>
+
+      <p>Setting Up the Environment (Editors and Browsers)</p>
+
+      <p>Global Attributes: Mastering universal attributes like id, class, title, and data-* for JavaScript and CSS
+        integration.</p>
+
+      <h3>Interactive Elements & Forms</h3>
+
+      <p>Forms & Validation: Building complex user interfaces with &lt;form&gt;, &lt;label&gt;, and various
+        &lt;input&gt; types (text, email, password, radio, checkbox).</p>
+
+      <p>Client-Side Security: Utilizing HTML5 validation attributes like required, pattern, min/max, and readonly to
+        ensure data integrity.</p>
+
+      <p>Interactive Controls: Implementing &lt;button&gt;, &lt;select&gt;, dropdowns, and &lt;textarea&gt; for rich
+        user feedback and data collection.</p>
+
+      <h3>Data Structures & Navigation</h3>
+
+      <p>Table Architecture: Designing structured data layouts using &lt;table&gt;, &lt;tr&gt;, &lt;th&gt;, and
+        &lt;td&gt;, including advanced colspan and rowspan usage.</p>
+
+      <p>Client-Side Security: Creating internal/external hyperlinks with the &lt;a&gt; tag, implementing anchors, and
+        using structured lists (&lt;ul&gt;, &lt;ol&gt;) for menus.</p>
+
+      <p>Media & Integration: Embedding responsive images (&lt;img&gt;), video, and audio; utilizing &lt;iframe&gt; for
+        external content integration.</p>
+
+        <h1>Module 2 - CSS – Styling & Layout</h1>
+
+<h3>Cascading Style Sheets</h3>
+
+<h3>CSS Architecture & The Box Model</h3>
+
+<p>Types of CSS: Mastering the three methods of implementation—Inline (style attribute), Internal (style tag), and External (linked .css files).</p>
+
+<p>Selectors &amp; Specificity: Understanding the CSS Cascade, ID vs. Class selectors, and Pseudo-classes (:hover, :active, :nth-child).</p>
+
+<p>The Box Model: Complete mastery of Content, Padding, Border, and Margin; utilizing box-sizing: border-box for predictable sizing.</p>
+
+<p>Modern Units: Moving beyond pixels to fluid units—rem, em, %, vh, and vw—for scalable design.</p>
+
+<h3>Layout Engines & Positioning</h3>
+
+<p>Flexbox (1D Layouts): Mastering flex-direction, justify-content, align-items, and flex-grow for dynamic row/column alignment.</p>
+
+<p>CSS Grid (2D Layouts): Building complex web structures using grid-template-areas, gap, and the fr unit.</p>
+
+<p>Positioning &amp; Flow: Complete mastery of positioning techniques for effective page layouts.</p>
+
+<p>Display Properties: Understanding the behavior of block, inline, inline-block, and none.</p>
+
+<h3>Visual Design & Responsiveness</h3>
+
+<p>Styling Basics: Mastering Colors (HEX, RGB, HSL), Backgrounds (Gradients, Images), and Typography (Google Fonts).</p>
+
+<p>Mobile-First Strategy: Implementing Media Queries to create seamless experiences across mobile, tablet, and desktop.</p>
+
+<p>Advanced Visuals: Utilizing CSS Variables for theme management and creating smooth Transitions, Animations, and Transforms.</p>
+
+<p>Flexibility: Handling overflow, text-truncation, and aspect-ratio for modern UI components.</p>
+
+
+<h1>Module 3 - Tailwind CSS</h1>
+
+<h3>Setup & Core Philosophy</h3>
+
+<p>Installation &amp; Integration: Setting up Tailwind via Play CDN for prototyping and NPM/PostCSS for production-grade builds.</p>
+
+<p>The Utility-First Mindset: Transitioning from traditional CSS files to inline utility classes for faster development.</p>
+
+<p>Configuration: Customizing the tailwind.config.js file to define custom color palettes, spacing scales, and font families.</p>
+
+<p>Standard Case: Building a styled button or card component entirely within HTML classes without writing custom CSS.</p>
+
+<h3>Responsive & State Logic</h3>
+
+<p>Mobile-First Modifiers: Implementing fluid layouts using screen-size prefixes like sm:, md:, lg:, and xl:.</p>
+
+<p>Interactive States: Managing UI feedback using state modifiers such as hover:, focus:, active:, and group-hover:.</p>
+
+<p>Dark Mode Strategy: Implementing a native dark theme using the dark: modifier and toggling via system preferences or a manual switch.</p>
+
+<p>Typography &amp; Spacing: Mastering the text, padding, and margin utility scales for consistent styling.</p>
+
+<h3>Component Patterns & Optimization</h3>
+
+<p>Style Reuse: Utilizing the @apply directive to extract repetitive utility patterns into clean, reusable CSS components.</p>
+
+<p>Layout Shells: Building complex application containers using Tailwind's built-in Flexbox and Grid utilities.</p>
+
+<p>JIT (Just-In-Time) Engine: Leveraging the dynamic compiler to generate only the CSS you use, keeping file sizes ultra-small.</p>
+
+<p>Custom Plugins: Extending Tailwind's functionality with official plugins for Forms, Typography, and Aspect Ratio.</p>
+
+<h1>Module 4 - JavaScript Core & Logic</h1>
+
+<h3>Core Language to Modern JS</h3>
+
+<h3>Modern Foundations</h3>
+
+<p>Execution Control &amp; Timing: External script integration, console.log debugging, and modern variable declarations (let, const).</p>
+
+<p>Data Representation: Primitive vs Non-Primitive (Objects/Arrays), hoisting concepts, and object &amp; array copying (shallow vs deep copy).</p>
+
+<p>Operators &amp; Branching: Mastering Arithmetic, Logical, and the Ternary Operator for concise conditional logic.</p>
+
+<p>Control Flow: Advanced if-else structures, switch cases, and modern looping (for...of, while, nested loops).</p>
+
+<p>Timers: Using setTimeout, setInterval, clearing timers, and introduction to the Event Loop.</p>
+
+<h3>Functional Architecture</h3>
+
+<p>The Arrow Era: Mastering Arrow Functions (() =&gt; {}) and their unique behavior with the this keyword.</p>
+
+<p>Special Patterns: Working with Anonymous Functions and IIFE (Immediately Invoked Function Expressions) for data privacy.</p>
+
+<p>Scope &amp; Closures: Understanding Global vs Local scope and how closures retain access to outer environments.</p>
+
+<p>Parameter Handling: Default parameters, Rest parameters (...args), and the difference between arguments and parameters.</p>
+
+<h3>Asynchronous Programming</h3>
+
+<p>The Async Journey: Evolution from Callbacks to Promises (resolve, reject) for handling non-blocking operations.</p>
+
+<p>Modern Async: Implementing Async/Await for writing clean and readable asynchronous code.</p>
+
+<p>ES6+ Data Unpacking: Mastering Destructuring Assignment and the Spread Operator for merging objects and arrays.</p>
+
+<p>Predefined Utilities: Deep dive into built-in String, Math, and Date functions for real-world data handling.</p>
+
+<p>Error Handling &amp; Debugging: try...catch...finally...throw, Promise error handling, and Async/Await error handling.</p>
+
+<h3>DOM &amp; Web APIs</h3>
+
+<p>Modern Selection: Querying the Document Object Model using CSS Selectors (querySelector, querySelectorAll).</p>
+
+<p>Dynamic UI Construction: Creating, appending, and removing elements; mastering textContent vs innerHTML.</p>
+
+<p>Fetch API &amp; API Integration: Sending and receiving data using GET, POST, PUT, and DELETE requests, working with fake APIs, and handling JSON data.</p>
+
+<p>Object-Oriented JavaScript: Introduction to Classes and Inheritance within the modern JavaScript ecosystem.</p>
+
+<h3>Event Handling &amp; Validation</h3>
+
+<p>Event Architecture: Adding listeners for Mouse, Keyboard, and Window events (click, keydown, load).</p>
+
+<p>Form Logic: Managing submit events, input states, and implementing robust Regex-based validation.</p>
+
+<p>Third-Party Integration: Setting up automated email communication from the browser using EmailJS.</p>
+
+<p>Object-Oriented JavaScript: Introduction to Classes and Inheritance within the modern JavaScript ecosystem.</p>
+
+<h3>Browser Storage &amp; Persistence</h3>
+
+<p>Web Storage API: Persisting user data and session states using localStorage and sessionStorage.</p>
+
+
+<h1>Module 5 - TypeScript</h1>
+
+<h3>Foundations &amp; Type System</h3>
+
+<p>TS Architecture: Compiler configuration (tsconfig.json), strict mode flags, and the transpilation process.</p>
+
+<p>Core Annotations: Defining types for variables, arrays, and functions (void, never, unknown).</p>
+
+<p>Advanced Shapes: Mastering Interfaces and Type Aliases for complex object and API data modeling.</p>
+
+<p>Flexibility: Using Union Types and Literal Types (e.g., type Status = "success" | "error") for state safety.</p>
+
+<h3>Advanced TS &amp; Browser Safety</h3>
+
+<p>Generics (&lt;T&gt;): Creating reusable, type-safe functions and components for large-scale applications.</p>
+
+<p>Utility Types: Mastering built-in helpers like Partial, Pick, and Omit to transform existing data shapes.</p>
+
+<p>Discriminated Unions: Handling complex UI states using type narrowing and literal properties.</p>
+
+<p>TS in the Browser: Type Casting (as HTMLInputElement) and safely typing DOM Events and Promises.</p>
+
+
+<h1>Module 6 - React.js with TypeScript</h1>
+
+<h3>Modern Component Architecture</h3>
+
+<p>Functional Ecosystem: Building UI using Functional Components, JSX/TSX syntax, and the Virtual DOM.</p>
+
+<p>Type-Safe Props: Defining interfaces for component properties to ensure data integrity across the UI.</p>
+
+<p>Component Lifecycle: Understanding the mounting, updating, and unmounting phases in a modern hook-based environment.</p>
+
+<p>Styling Integration: Implementing Tailwind CSS within React components for rapid and responsive UI development.</p>
+
+<p>Custom Hooks: Designing reusable logic blocks to share functionality between multiple components.</p>
+
+<h3>React Hooks &amp; State Management</h3>
+
+<p>State Mastery: Utilizing useState for local data handling and useEffect for managing side effects and API triggers.</p>
+
+<p>Performance Hooks: Implementing useMemo and useCallback to prevent unnecessary re-renders in complex applications.</p>
+
+<p>Reference &amp; DOM: Using useRef for direct DOM access and persisting values without triggering renders.</p>
+
+<p>Context API: Managing theme, authentication, and global configurations without prop drilling.</p>
+
+<p>Composition: Mastering component nesting, children props, and creating reusable UI libraries.</p>
+
+<h3>Navigation &amp; Data Fetching</h3>
+
+<p>React Router: Implementing dynamic routing, nested routes, and URL parameters for Single Page Applications (SPAs).</p>
+
+<p>Protected Routes: Creating authentication guards to restrict access to specific pages based on user status.</p>
+
+<p>API Integration: Using Axios for robust HTTP requests and handling complex loading/error states.</p>
+
+<p>JSON Server (Mock Backend): Creating a local API for testing and development while practicing CRUD operations.</p>
+
+<p>Form Handling: Managing controlled components and integrating validation logic for user inputs.</p>
+
+<h1>Module 7 - Redux Toolkit (RTK) – Global State</h1>
+
+<h3>Store & Slice Architecture</h3>
+
+<p>Centralized Store: Configuring the "Single Source of Truth" using configureStore with TypeScript integration.</p>
+
+<p>State Slicing: Organizing logic into modular slices using createSlice for maintainable and scalable code.</p>
+
+<p>Immutability: Handling state updates safely using the built-in Immer library logic within Redux Toolkit.</p>
+
+<h3>Dispatching & Data Selection</h3>
+
+<p>Action Logic: Using useDispatch to trigger state changes from any component in the application.</p>
+
+<p>State Selection: Utilizing useSelector with memoized selectors for efficient data retrieval.</p>
+
+<h3>Advanced Asynchronous Logic</h3>
+
+<p>Async Thunks: Managing complex asynchronous workflows and API calls using createAsyncThunk.</p>
+
+<p>RTK Query: Automating data fetching, caching, and server-state synchronization to reduce boilerplate code.</p>
+
+<p>Middleware: Implementing custom middleware for logging, error tracking, and persistent state management.</p>
+
+<p>Full Stack Bridge: Connecting the React-Redux frontend to Django REST Framework for real-time data synchronization.</p>
+
+
+<h1>Module 8 - Node.js</h1>
+
+<h3>Server-Side JavaScript</h3>
+
+<h3>Introduction to Node.js</h3>
+
+<p>Understand Node.js and run JavaScript on the server.</p>
+
+<p>What is Node.js and its role in MERN.</p>
+
+<p>Node.js vs Browser JavaScript – key differences.</p>
+
+<p>Installing Node.js and checking version.</p>
+
+<p>Running JavaScript files with the node command.</p>
+
+<p>REPL (Read-Eval-Print Loop).</p>
+
+<p>Global objects – __dirname, __filename, process.</p>
+
+<h3>Modules & npm</h3>
+
+<p>Work with modules and packages.</p>
+
+<p>CommonJS modules – require & module.exports.</p>
+
+<p>ES Modules in Node – import / export.</p>
+
+<p>Built-in modules – path, os, url.</p>
+
+<p>npm – installing, uninstalling, and updating packages.</p>
+
+<p>package.json – scripts, dependencies, and devDependencies.</p>
+
+<p>node_modules and .gitignore.</p>
+
+<h3>File System & Events</h3>
+
+<p>Read and write files using the fs module.</p>
+
+<p>fs module – readFile(), writeFile(), appendFile() (sync & async).</p>
+
+<p>Streams & buffers overview.</p>
+
+<p>fs.promises (async/await with the file system).</p>
+
+<p>EventEmitter – creating and listening to events.</p>
+
+<p>Self Learn: Path module deep dive.</p>
+
+<h3>HTTP Module & Building a Server</h3>
+
+<p>Build a basic HTTP server.</p>
+
+<p>http.createServer().</p>
+
+<p>Request & Response objects.</p>
+
+<p>Manual routing using req.url and req.method.</p>
+
+<p>Sending JSON responses.</p>
+
+<p>HTTP status codes.</p>
+
+<p>Why Express is needed (transition).</p>
+
+<h3>Environment & Async in Node</h3>
+
+<p>Handle configuration and asynchronous patterns.</p>
+
+<p>dotenv – managing environment variables.</p>
+
+<p>Using process.env.</p>
+
+<p>Error handling in Node.js.</p>
+
+<p>Async patterns – callbacks, Promises, and async/await.</p>
+
+<p>Self Learn: Node.js streams deep dive.</p>
+
+<p>Self Learn: File System demo project.</p>
+
+
+<h1>Module 9 - MongoDB</h1>
+
+<h3>NoSQL Database</h3>
+
+<h3>Introduction & Setup</h3>
+
+<p>Understand MongoDB and get it running.</p>
+
+<p>What is MongoDB and its role.</p>
+
+<p>NoSQL vs SQL – key differences.</p>
+
+<p>When to use MongoDB over SQL.</p>
+
+<p>Core features – flexible schema, scalability, and JSON-like documents.</p>
+
+<p>Installing MongoDB locally.</p>
+
+<p>MongoDB Atlas – cloud setup.</p>
+
+<p>MongoDB Compass – visual tool overview.</p>
+
+<p>MongoDB Shell (mongosh) – basics.</p>
+
+<h3>Structure & CRUD Basics</h3>
+
+<p>Create databases, collections, and perform CRUD operations.</p>
+
+<p>Database → Collection → Document hierarchy.</p>
+
+<p>BSON vs JSON – what MongoDB actually stores.</p>
+
+<p>Common data types – string, number, boolean, date, ObjectId, array, and object.</p>
+
+<p>_id field – what it is and how it works.</p>
+
+<p>insertOne() and insertMany().</p>
+
+<p>find() and findOne().</p>
+
+<p>updateOne(), updateMany(), and replaceOne().</p>
+
+<p>deleteOne() and deleteMany().</p>
+
+<h3>Filters, Operators & Queries</h3>
+
+<p>Comparison operators – $eq, $ne, $gt, $gte, $lt, $lte.</p>
+
+<p>Logical operators – $and, $or, $not, $nor.</p>
+
+<p>Element operators – $exists, $type.</p>
+
+<p>Array operators – $in, $nin, $all, $elemMatch.</p>
+
+<p>Update operators – $set, $unset, $inc, $push, $pull, $pop.</p>
+
+<p>sort(), limit(), skip() – pagination basics.</p>
+
+<p>Projections – include and exclude fields.</p>
+
+<p>countDocuments().</p>
+
+<h3>Embedded Documents & Arrays</h3>
+
+<p>Model and query nested data.</p>
+
+<p>Embedding vs Referencing – when to use which.</p>
+
+<p>Querying nested fields using dot notation.</p>
+
+<p>Updating nested fields.</p>
+
+<p>Arrays inside documents.</p>
+
+<p>Querying array elements with $elemMatch.</p>
+
+<p>Adding and removing array elements.</p>
+
+<h3>Aggregation Pipeline</h3>
+
+<p>Transform and analyze data.</p>
+
+<p>What is aggregation and why it is needed.</p>
+
+<p>Pipeline concept – stages run in order.</p>
+
+<p>$match, $group, $sort, $project, $limit, $skip, and $count.</p>
+
+<p>$unwind – flatten array fields.</p>
+
+<p>$lookup – joining two collections.</p>
+
+<p>$addFields – add computed fields.</p>
+
+<p>Chaining multiple aggregation stages together.</p>
+
+<h3>Indexing, Schema Design & Revision</h3>
+
+<p>Optimize queries and consolidate knowledge.</p>
+
+<p>What is an index and why it matters.</p>
+
+<p>createIndex() – single-field and compound indexes.</p>
+
+<p>Text index and unique index.</p>
+
+<p>explain() – understanding query execution.</p>
+
+<p>Schema design – embedding vs referencing patterns.</p>
+
+<p>One-to-one, one-to-many, and many-to-many relationships.</p>
+
+<p>Revision – 10 queries of increasing complexity.</p>
+
+<h1>Module 10 - SQL / PostgreSQL</h1>
+
+<h3>Relational Database</h3>
+
+<h3>Setup & Core Basics</h3>
+
+<p>Get PostgreSQL running and understand fundamentals.</p>
+
+<p>Installing PostgreSQL and pgAdmin.</p>
+
+<p>Creating a database and connecting.</p>
+
+<p>psql shell basics (\l, \c, \dt, \d).</p>
+
+<p>Common data types – INTEGER, VARCHAR, TEXT, BOOLEAN, TIMESTAMP, SERIAL.</p>
+
+<p>DROP TABLE and ALTER TABLE.</p>
+
+<h3>CRUD Operations</h3>
+
+<p>Insert, read, update, and delete data.</p>
+
+<p>INSERT INTO – single and multiple rows.</p>
+
+<p>SELECT – all and specific columns.</p>
+
+<p>WHERE clause – filtering rows.</p>
+
+<p>UPDATE – modify existing records.</p>
+
+<p>DELETE – remove records.</p>
+
+<p>RETURNING clause.</p>
+
+<p>Comparison and logical operators in SQL.</p>
+
+<h3>Filtering, Sorting & Pagination</h3>
+
+<p>Control query output.</p>
+
+<p>IN, NOT IN, BETWEEN, LIKE, ILIKE.</p>
+
+<p>ORDER BY – ascending and descending.</p>
+
+<p>LIMIT and OFFSET – pagination basics.</p>
+
+<p>IS NULL and IS NOT NULL.</p>
+
+<p>DISTINCT – remove duplicate results.</p>
+
+<p>Aliasing columns and tables using the AS keyword.</p>
+
+<h3>Relations & Joins</h3>
+
+<p>Design related tables and query across them.</p>
+
+<p>Foreign key and why it matters.</p>
+
+<p>One-to-many relationship – users and orders example.</p>
+
+<p>Many-to-many relationship – students and courses using a junction table.</p>
+
+<p>ON DELETE CASCADE.</p>
+
+<p>INNER JOIN – only matching rows.</p>
+
+<p>LEFT JOIN – all rows from the left table with matching rows from the right.</p>
+
+<p>Joining more than two tables using aliases.</p>
+
+<h3>Aggregations & Grouping</h3>
+
+<p>Summarize and analyze data.</p>
+
+<p>COUNT, SUM, AVG, MIN, and MAX.</p>
+
+<p>GROUP BY – group rows by a column.</p>
+
+<p>HAVING – filter after grouping.</p>
+
+<p>Difference between WHERE and HAVING.</p>
+
+<p>CASE WHEN – conditional output.</p>
+
+<p>Subqueries – query inside another query.</p>
+
+<h3>Indexes, Constraints & Revision</h3>
+
+<p>Optimize performance and consolidate knowledge.</p>
+
+<p>Constraints revision – PRIMARY KEY, FOREIGN KEY, UNIQUE, NOT NULL, CHECK.</p>
+
+<p>CREATE INDEX and DROP INDEX.</p>
+
+<p>When to index – high-read and frequent WHERE columns.</p>
+
+<p>EXPLAIN – understanding how PostgreSQL executes queries.</p>
+
+<p>Schema design exercise – Library Management System.</p>
+
+<p>Final practice – mixed query challenge.</p> 
+
+<h1>Module 11 - Express.js</h1>
+
+<h3>Backend Framework & Full API Development</h3>
+
+<h3>Introduction to Express.js</h3>
+
+<p>Set up Express and understand its purpose.</p>
+
+<p>Purpose of Express.js in the MERN stack.</p>
+
+<p>Features and advantages over the raw Node.js HTTP module.</p>
+
+<p>Setting up the project environment and folder structure.</p>
+
+<p>Installing Express using npm install express.</p>
+
+<p>Creating your first Express server.</p>
+
+<p>Understanding Request (req) and Response (res) objects.</p>
+
+<h3>Routing in Express</h3>
+
+<p>Handle different routes and HTTP methods.</p>
+
+<p>Understanding routing concepts.</p>
+
+<p>Working with GET, POST, PUT, PATCH, and DELETE methods.</p>
+
+<p>Using Route Parameters (req.params).</p>
+
+<p>Using Query Strings (req.query).</p>
+
+<p>Organizing routes with Express Router.</p>
+
+<p>Serving static files using express.static().</p>
+
+<h3>Middleware in Express</h3>
+
+<p>Understand middleware and the middleware chain.</p>
+
+<p>Using built-in middleware such as express.json() and express.urlencoded().</p>
+
+<p>Using third-party middleware like morgan, cors, and helmet.</p>
+
+<p>Creating custom middleware.</p>
+
+<p>Implementing error-handling middleware.</p>
+
+<p>Understanding next() and next(err).</p>
+
+<h3>Database Integration - Mongoose</h3>
+
+<p>Connect Express applications to MongoDB.</p>
+
+<p>Installing Mongoose.</p>
+
+<p>Connecting MongoDB Atlas with Express.</p>
+
+<p>Creating Mongoose schemas and models.</p>
+
+<p>Performing CRUD operations using Mongoose.</p>
+
+<p>Using model methods like find(), findById(), findByIdAndUpdate(), and findByIdAndDelete().</p>
+
+<p>Adding validation in Mongoose schemas.</p>
+
+<h3>REST API Design</h3>
+
+<p>Build proper RESTful APIs.</p>
+
+<p>Understanding REST principles, resources, HTTP methods, and status codes.</p>
+
+<p>Designing clean API routes.</p>
+
+<p>Sending structured JSON responses.</p>
+
+<p>Using HTTP status codes such as 200, 201, 400, 401, 403, 404, and 500.</p>
+
+<p>Implementing consistent error response formats.</p>
+
+<p>Testing APIs with Postman.</p>
+
+<h3>Authentication - Basics</h3>
+
+<p>Understand authentication concepts.</p>
+
+<p>Authentication vs Authorization.</p>
+
+<p>User registration and login flow.</p>
+
+<p>Password hashing using bcrypt/bcryptjs.</p>
+
+<p>Why plain text passwords should never be stored.</p>
+
+<p>Sessions and Cookies overview.</p>
+
+<p>Introduction to JSON Web Tokens (JWT).</p>
+
+<h3>JWT Authentication</h3>
+
+<p>Implement JWT-based authentication.</p>
+
+<p>Generating JWT using the jsonwebtoken package.</p>
+
+<p>Signing JWT with a secret key.</p>
+
+<p>Verifying JWT on protected routes.</p>
+
+<p>Creating authentication middleware.</p>
+
+<p>Storing JWT using localStorage or HTTP-only cookies.</p>
+
+<p>Overview of Refresh Tokens.</p>
+
+<h3>Email Verification & OTP</h3>
+
+<p>Implement email verification in the authentication flow.</p>
+
+<p>Understanding the email verification process.</p>
+
+<p>Setting up Nodemailer.</p>
+
+<p>Sending emails using SMTP, Gmail, or SendGrid.</p>
+
+<p>Generating OTP and managing expiry.</p>
+
+<p>Creating Register, Verify OTP, and Resend OTP routes.</p>
+
+<p>Updating verification status in the database.</p>
+
+<h3>Security & Environment</h3>
+
+<p>Build secure Express applications.</p>
+
+<p>Managing environment variables using dotenv.</p>
+
+<p>Using process.env in Express applications.</p>
+
+<p>Applying rate limiting with express-rate-limit.</p>
+
+<p>Securing HTTP headers using helmet.</p>
+
+<p>Understanding input sanitization.</p>
+
+<p>Configuring CORS for frontend integration.</p>
+
+<h3>Advanced Middleware & Error Handling</h3>
+
+<p>Write production-grade Express applications.</p>
+
+<p>Handling asynchronous errors.</p>
+
+<p>Using express-async-errors package.</p>
+
+<p>Creating a centralized error handler.</p>
+
+<p>Building a custom AppError class.</p>
+
+<p>Logging with morgan in development and production.</p>
+
+<p>Implementing 404 handling middleware.</p>
+
+<h3>Full Authentication System</h3>
+
+<p>Build a complete signup, verification, and login flow.</p>
+
+<p>Signup, OTP, Email Verification, and Login workflow.</p>
+
+<p>Protecting routes using JWT.</p>
+
+<p>Creating a Resend OTP endpoint.</p>
+
+<p>Returning JWT and cookies after login.</p>
+
+<p>Implementing Logout by clearing authentication tokens.</p>
+
+<h3>File Uploads</h3>
+
+<p>Handle file uploads in Express.</p>
+
+<p>Using multer for multipart/form-data.</p>
+
+<p>Uploading images to local storage.</p>
+
+<p>Uploading files to Cloudinary.</p>
+
+<p>Restricting file types and file sizes.</p>
+
+<p>Returning uploaded file URLs in API responses.</p>
+
+<h3>Two-Factor Authentication & Advanced Security</h3>
+
+<p>Implement Two-Factor Authentication (2FA).</p>
+
+<p>Understanding the TOTP authentication flow.</p>
+
+<p>Using speakeasy or otplib.</p>
+
+<p>Generating QR codes for authenticator apps.</p>
+
+<p>Verifying TOTP during login.</p>
+
+<p>Implementing account lockout after multiple failed login attempts.</p>
+
+<h3>Full Backend Project</h3>
+
+<p>Plan and build a complete backend API.</p>
+
+<p>Create a project brief (E-commerce API or Blog API).</p>
+
+<p>Design the database schema using MongoDB or PostgreSQL.</p>
+
+<p>Plan REST API routes.</p>
+
+<p>Implement JWT authentication with Refresh Tokens.</p>
+
+<p>Organize the project using routes, controllers, models, middleware, and utilities.</p>
+
+<h3>Project Build - Authentication & Users</h3>
+
+<p>Create the User model and schema.</p>
+
+<p>Build Register, Verify Email, Login, and Logout APIs.</p>
+
+<p>Implement JWT and Refresh Tokens.</p>
+
+<p>Create authentication middleware.</p>
+
+<p>Develop User Profile APIs for viewing and updating profiles.</p>
+
+<h3>Project Build - Core Features</h3>
+
+<p>Develop CRUD APIs for products, posts, or tasks.</p>
+
+<p>Integrate file upload functionality.</p>
+
+<p>Implement pagination and filtering.</p>
+
+<p>Manage relationships between database models.</p>
+
+<p>Apply validation and error handling across the application.</p>
+
+<h3>Project Build - Testing & Documentation</h3>
+
+<p>Test all API endpoints using Postman.</p>
+
+<p>Create a Postman Collection.</p>
+
+<p>Use Postman Environment Variables.</p>
+
+<p>Write API documentation in README.md.</p>
+
+<p>Implement input validation using Joi or express-validator.</p>
+
+<p>Debug common backend issues.</p>
+
+<h3>Deployment</h3>
+
+<p>Deploy the Express API to production.</p>
+
+<p>Deploy on Render or Railway.</p>
+
+<p>Configure production environment variables.</p>
+
+<p>Connect to MongoDB Atlas production database.</p>
+
+<p>Configure CORS for deployed frontend applications.</p>
+
+<p>Create a Health Check endpoint.</p>
+
+<p>Implement basic production logging and monitoring.</p>
+
+<h3>Express Revision Day 1</h3>
+
+<p>Revise routing and middleware.</p>
+
+<p>Revise JWT, bcrypt, and OTP authentication.</p>
+
+<p>Revise Mongoose CRUD operations.</p>
+
+<p>Revise error handling patterns.</p>
+
+<p>Practice Express and Node.js interview questions.</p>
+
+<h3>Express Revision Day 2</h3>
+
+<p>Revise REST API design principles.</p>
+
+<p>Revise pagination, search, and filtering.</p>
+
+<p>Revise backend security best practices.</p>
+
+<p>Revise file upload implementation.</p>
+
+<p>Revise PostgreSQL integration.</p>
+
+<h3>Full MERN Integration</h3>
+
+<p>Connect the React frontend with the Express backend.</p>
+
+<p>Consume Express APIs using Axios or Fetch.</p>
+
+<p>Configure CORS for full-stack applications.</p>
+
+<p>Implement React authentication with JWT-protected API calls.</p>
+
+<p>Deploy the complete MERN application using Vercel and Render.</p>
+
+<p>Complete the final project walkthrough and course wrap-up.</p>
+
+    </section>
+
+
+
+
+
+
+  </main>
+
+  <footer class="h-16 bg-[var(--main-color)] flex justify-center items-center ">
+    &copy; 2026 techolas technologies.all rights reserved
+  </footer>
+
+
+
+  <script src="script.js"></script>

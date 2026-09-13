@@ -1,0 +1,421 @@
+/* common  */
+* {
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  text-transform: capitalize;
+  scroll-behavior: smooth;
+
+}
+
+:root {
+  --main-color: #ee9c03;
+}
+
+body {
+  color: black;
+  background-color: white;
+}
+
+/* navbar  */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+
+}
+
+.nav-link {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 500;
+  /* margin: 0 20px; */
+  transition: 0.2s ease-in-out;
+
+}
+
+.nav-link:hover {
+  color: var(--main-color);
+  scale: 1.1;
+}
+
+#contact {
+  padding: 5px 10px;
+  color: var(--main-color);
+  border-radius: 10px;
+  transition: 0.2s ease-in-out;
+
+}
+
+#contact:hover {
+  padding: 5px 10px;
+  color: white;
+  background-color: #fbb531;
+  border-radius: 10px;
+  scale: 1.1.;
+}
+
+#menu {
+  width: 30px;
+  display: none;
+  cursor: pointer;
+}
+
+.close {
+  width: 25px;
+  margin-bottom: 40px;
+  cursor: pointer;
+
+}
+
+/* side nav  */
+.sidenav {
+  background-color: var(--main-color);
+
+  /* box-shadow: 0 0 5px grey; */
+
+  width: 40%;
+  height: 100vh;
+  position: fixed;
+  z-index: 200;
+  top: 0;
+  right: 0;
+  padding: 20px;
+  display: none;
+}
+
+.side-nav-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 10px;
+}
+
+.side-nav-container a:hover {
+  color: white;
+}
+
+.side-nav-container #contact {
+  color: black;
+  padding: 0;
+  border-radius: 0;
+}
+
+.side-nav-container #contact:hover {
+  color: white;
+  background-color: transparent;
+  padding: 0;
+  border-radius: 0;
+}
+
+/* main section1 home*/
+#home {
+  padding: 120px 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+}
+
+#home h1,
+#home span {
+  font-size: 60px;
+  margin-bottom: 30px;
+}
+
+#home span {
+  color: var(--main-color);
+}
+
+#home button {
+  margin-top: 30px;
+  margin-left: 10px;
+  background-color: white;
+  padding: 8px 20px;
+  border-radius: 10px;
+  border: 2px solid var(--main-color);
+  font-weight: 600;
+  gap: 10px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+#home button:hover {
+  transform: scale(1.1);
+  background-color: var(--main-color);
+  border: 2px solid var(--main-color);
+  color: white;
+}
+
+/* about  section  */
+#about h1 {
+  font-size: 60px;
+  font-weight: 600;
+  color: var(--main-color);
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#about p {
+  margin-bottom: 30px;
+
+}
+
+#about button {
+  padding: 10px 20px;
+  border-radius: 50px;
+  background-color: var(--main-color);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+#about button:hover {
+  padding: 10px 20px;
+  border-radius: 50px;
+  background-color: black;
+  color: white;
+
+}
+
+/* course section  */
+#courses h1 {
+  font-size: 60px;
+  font-weight: 600;
+  color: var(--main-color);
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.card {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 10px;
+  cursor: pointer;
+  background-color: var(--bg-color);
+  box-shadow: 0 0 10px rgba(128, 128, 128, 0.57);
+  justify-content: center;
+  align-items: center;
+  max-width: 300px;
+  padding: 10px;
+  border-radius: 30px;
+  transition: 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.card p {
+  font-weight: 600;
+}
+
+.card .btn {
+  color: var(--main-color);
+  background-color: white;
+  font-weight: 600;
+  border-radius: 50px;
+  padding: 8px 20px;
+  transition: 0.2s;
+
+}
+
+.card .btn:hover {
+  color: white;
+  background-color: var(--main-color);
+  font-weight: 600;
+  border-radius: 50px;
+  padding: 8px 20px;
+
+}
+
+/* placement section  */
+
+#placement h1 {
+  font-size: 60px;
+  font-weight: 600;
+  color: var(--main-color);
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.items {
+  width: 280px;
+  height: 350px;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 10px;
+
+
+}
+
+.items img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: 0.3s ease-in-out;
+}
+
+.items:hover img {
+  scale: 1.05;
+}
+.placementbtn{
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 50px;
+  background-color: var(--main-color);
+  color: white;
+  transition: 0.3s;
+  margin-top: 50px;
+}
+.placementbtn:hover{
+  background-color: black;
+  scale: 1.1;
+}
+
+/* contact  */
+#contacts h3{
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 18px;
+  color: var(--main-color);
+}
+
+form input, form textarea,form select{
+  border: 1px solid var(--main-color);
+  padding: 10px ;
+  border-radius: 10px;
+}
+form textarea{
+  resize: none;
+}
+form button{
+  background-color: var(--main-color);
+  border-radius: 5px;
+  padding: 5px;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+
+}
+form button:hover{
+  background-color: #f9b32f;
+}
+
+/* message  */
+.msg {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+
+      justify-content: center;
+      align-items: center;
+    }
+
+    .msg-content {
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      text-align: center;
+      width: 300px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, .3);
+    }
+
+    .msg-content h2 {
+      color: var(--main-color);
+      font-size: 30px;
+      font-weight: 600;
+    }
+
+    .msg-content button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      cursor: pointer;
+      background-color: var(--main-color);
+      color: white;
+      font-weight: 600;
+    }
+
+/* media queries  */
+@media (max-width:1200px){
+  .items {
+  width: 200px;
+  height: 250px;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 10px;
+
+
+}
+}
+
+
+@media (max-width:992px) {
+  #home {
+    flex-direction: column-reverse;
+  }
+
+  #home h1,
+  #home span,
+  #courses h1,
+  #about h1,
+  #placement h1 {
+    font-size: 50px;
+    margin-bottom: 30px;
+  }
+
+  
+.items {
+  width: 220px;
+  height: 300px;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 10px;
+
+
+}
+  
+}
+
+@media (max-width:768px) {
+  #menu {
+    width: 30px;
+    display: block;
+  }
+
+  .nav-container {
+    display: none;
+
+  }
+
+  /* hero home section */
+  #home h1,
+  #home span,
+  #courses h1,
+  #about h1,
+  #placement h1 {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+.items {
+  width: 250px;
+  height: 300px;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 10px;
+
+
+}
+
+}

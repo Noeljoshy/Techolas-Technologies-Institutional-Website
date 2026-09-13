@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Techolas Technologies-Data Analytics</title>
+
+  <!-- favicon link  -->
+  <link rel="icon" href="/icon/Techolas-lcon.png">
+
+  <!-- css link  -->
+  <link rel="stylesheet" href="datascience.css">
+
+  <!-- tailwind cdn link  -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <!-- google font:poppins link  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <style>
+
+  </style>
+</head>
+
+<body>
+
+  <header>
+
+    <!-- main-navbar  -->
+    <nav class="flex justify-between items-center px-5 pt-2 h-20 fixed top-0 left-0 w-full bg-white z-100">
+
+      <!-- logo  -->
+      <a href="index.html">
+        <img src="/icon/Techolas-logo.webp" alt="" class="w-40 sm:w-45 ">
+      </a>
+
+      <!-- navlinks  -->
+      <div class="nav-container">
+        <a href="index.html#home" class="nav-link">home</a>
+        <a href="index.html#about" class="nav-link">About</a>
+        <a href="index.html#courses" class="nav-link">courses</a>
+        <a href="index.html#placement" class="nav-link">placements</a>
+        <a href="index.html#contacts" class="nav-link" id="contact">contact</a>
+      </div>
+
+      <!-- menulogo  -->
+      <img src="/icon/menu.png" alt="" id="menu" onclick=" shownav()">
+
+    </nav>
+
+    <!-- side-navbar  -->
+    <nav class="sidenav">
+
+      <!-- closelogo  -->
+      <img src="/icon/x-solid.png" alt="" class="close" onclick="closenav()">
+
+      <!-- side-navlinks  -->
+      <div class="side-nav-container">
+        <a href="index.html#home" class="nav-link" onclick="closenav()">home</a>
+        <a href="index.html#about" class="nav-link" onclick="closenav()">About</a>
+        <a href="index.html#courses" class="nav-link" onclick="closenav()">courses</a>
+        <a href="index.html#placement" class="nav-link" onclick="closenav()">placements</a>
+        <a href="index.html#contacts" class="nav-link" id="contact" onclick="closenav()">contact</a>
+      </div>
+
+    </nav>
+
+
+  </header>
+
+  <img src="/images/da carosel.png" alt="" class="w-full mt-20">
+  <main class="px-10">
+
+    <section id="ds-section">
+      <div class="ds">
+        <h1>Course Description</h1>
+        <p>Our Data Analytics Course in Calicut equips learners with the technical and analytical skills required to
+          transform raw data into meaningful business insights. The curriculum covers essential tools including Python,
+          MySQL, NumPy, Pandas, Matplotlib, Seaborn, and core Statistics, helping students build a strong analytical
+          foundation.</p>
+
+        <p>Students gain practical exposure to Machine Learning concepts, Web Scraping techniques, and advanced data
+          visualization tools such as Excel, Power BI, and Tableau, enabling them to present data-driven solutions
+          effectively.
+
+          The program also introduces R Programming for advanced statistical analysis and GitHub for version control and
+          collaborative workflows, ensuring learners are prepared for real-world project environments.</p>
+
+
+      </div>
+
+      <div class="box">
+        <h2>Courses details</h2>
+        <h4>Durations : <span>8 Months</span></h4>
+        <h4>Lessons : <span>5 Days a Week</span></h4>
+        <h4>Language : <span>Malayalam,English</span></h4>
+        <h4>Registration Fees : <span>500rs</span></h4>
+
+      </div>
+    </section>
+
+    <button id="overview"
+      class="px-5 py-2 border-1 border-grey rounded-lg hover:bg-[var(--main-color)] hover:border-white m-3 font-semibold"
+      onclick=" btnoverview()">overview</button>
+    <button id="Curriculum"
+      class="px-5 py-2 border-1 border-grey rounded-lg hover:bg-[var(--main-color)] hover:border-white m-3 font-semibold"
+      onclick="btncurriculumdiv()">Curriculum</button>
+
+
+
+    <section id="overview-div">
+      Our Data Analytics Course in Calicut provides a comprehensive pathway for learners to build strong,
+      industry-aligned analytical skills. Beginning with the fundamentals of Python programming, MySQL, and core
+      statistical concepts, the course establishes a solid foundation for understanding and working with real-world
+      data.
+
+      Students learn how data is collected, cleaned, transformed, and interpreted — essential skills for modern data
+      professionals.
+
+
+
+      As you progress, you’ll explore powerful Python libraries such as NumPy, Pandas, Matplotlib, and Seaborn, enabling
+      efficient data manipulation and meaningful visualization. The curriculum is structured to move from basic
+      operations to advanced data handling techniques, ensuring confidence through practical, hands-on projects.
+
+
+
+      The program also covers Machine Learning fundamentals and Web Scraping techniques, allowing learners to build
+      predictive models and extract valuable insights from online sources.
+
+
+
+      To strengthen business intelligence capabilities, students receive hands-on training in Excel, Power BI, and
+      Tableau, learning to create dashboards, automate reporting, and present insights effectively.
+
+
+
+      Additionally, the course introduces R programming for advanced statistical analysis and GitHub for version control
+      and collaborative workflow management, preparing students for real-world team environments.
+
+
+
+      By the end of the program, learners are equipped with a versatile toolkit and practical experience to pursue roles
+      such as:
+      <br><br>
+      Data Analyst
+      <br><br>
+     Business Intelligence Analyst
+      <br><br>
+      Reporting Analyst
+      <br><br>
+      Junior Data Scientist
+      <br><br>
+      With expert guidance, real-time projects, and placement support, our Data Analytics training in Calicut prepares students to confidently solve real-world data challenges and build successful careers in analytics.
+    </section>
+
+    <section id="curriculum-div">
+      <h1>MODULE 1</h1>
+
+<h3>INTRODUCTION TO DATA ANALYTICS</h3>
+
+<p>● What is Data and why it is important?</p>
+<p>● The Data Analytics Process</p>
+<p>● Types of Data Analytics</p>
+<p>● Data Collection and Preprocessing</p>
+<p>● Exploratory Data Analysis (EDA)</p>
+<p>● Data Visualization</p>
+<p>● Basics of Statistical Analysis</p>
+<p>● Predictive Modelling and Machine Learning</p>
+<p>● Tools and Technologies for Data Analytics</p>
+
+<h1>MODULE 2</h1>
+
+<h3>PYTHON PROGRAMMING</h3>
+
+<p>● An Introduction to Python</p>
+<p>● Python Environment Setup</p>
+<p>● Discuss IDEs like IDLE and PyCharm</p>
+<p>● Start Programming on an Interactive Shell</p>
+<p>● Python Identifiers and Keywords</p>
+<p>● Discussion About Installed Modules and Packages</p>
+<p>● Access Command Line Arguments Within Programs</p>
+<p>● Conditional Statements, Loops, and File Handling</p>
+<p>● Python Data Types and Variables</p>
+<p>● Conditions and Loops in Python</p>
+<p>● Decorators</p>
+<p>● Python Modules and Packages</p>
+<p>● Python Files and Directories Manipulation</p>
+<p>● Use Various File and Directory Functions for OS Operations</p>
+<p>● Python Core Objects and Functions</p>
+<p>● Built-in Modules (Library Functions)</p>
+<p>● Numeric and Math Modules</p>
+<p>● Strings, Lists, Dictionaries, and Tuples</p>
+<p>● Complex Data Structures in Python</p>
+<p>● Arbitrary Data Types and Their Data Structures</p>
+<p>● Python Built-in Functions</p>
+<p>● Python User-defined Functions</p>
+<p>● Python Packages and Functions</p>
+<p>● Anonymous Functions (Lambda Functions)</p>
+<p>● Object-Oriented Python</p>
+<p>● OOP Concepts</p>
+<p>● Objects, Classes, and Destroying Objects</p>
+<p>● Accessing Attributes and Built-in Class Attributes</p>
+<p>● Inheritance and Polymorphism</p>
+<p>● Overriding Methods and Data Hiding</p>
+<p>● Operator Overloading</p>
+<p>● Exception Handling in Python</p>
+<p>● Handling Various Exceptions Using try...except...else</p>
+<p>● Try...finally Clause</p>
+<p>● Arguments of an Exception and Creating Self-defined Exception Classes</p>
+<p>● Python Standard Exceptions</p>
+<p>● Raising Exceptions</p>
+<p>● User-defined Exceptions</p>
+<p>● Debugging Python Programs</p>
+<p>● Debug Python Programs Using PDB Debugger</p>
+<p>● Assert for Debugging</p>
+<p>● Iterators, Generators, and Decorators</p>
+<p>● Yielding from Generators</p>
+<p>● Standard Project Setup in Python</p>
+<p>● Regular Expressions</p>
+
+<h1>MODULE 3</h1>
+
+<h3>SQL</h3>
+
+<p>● Introduction to Relational Databases</p>
+<p>● Installation of MySQL Workbench</p>
+<p>● Database Creation – Create, Delete, Show, Use</p>
+<p>● Table Creation – Create, Alter, Update, Delete, Select</p>
+<p>● Clauses – Where, Group By, Order By, Having, Like</p>
+<p>● SQL Constraints</p>
+<p>● Primary Key and Foreign Key</p>
+<p>● Unique</p>
+<p>● Not Null</p>
+<p>● Default</p>
+<p>● Auto Increment</p>
+<p>● Joins – Inner Join, Left Join, Right Join, Outer Join</p>
+<p>● SQL Functions</p>
+
+<h1>MODULE 4</h1>
+
+<h3>LIBRARIES (NUMPY, PANDAS, MATPLOTLIB)</h3>
+
+<h3>NUMPY</h3>
+
+<p>● Installation and Introduction</p>
+<p>● NumPy Arrays</p>
+<p>● Different Ways to Create NumPy Arrays and 2D Arrays</p>
+<p>● NumPy Array Operations, Slicing, and Linear Algebra</p>
+<p>● Load Data from External Sources</p>
+
+<h3>PANDAS</h3>
+
+<p>● Introduction to Pandas</p>
+<p>● Series and DataFrames</p>
+<p>● Different Ways to Create DataFrames</p>
+<p>● Read and Write CSV, Excel, and Text Files</p>
+<p>● SQL Read and Write</p>
+<p>● Slicing and Reshaping</p>
+<p>● Operations with DataFrames</p>
+<p>● Date, Time, and Index</p>
+<p>● Group By, Merge, and Concatenate</p>
+<p>● Analytics Using Pandas</p>
+
+<h3>MATPLOTLIB</h3>
+
+<p>● Introduction to Matplotlib</p>
+<p>● Line Plot</p>
+<p>● Bar Plot</p>
+<p>● Scatter Plot</p>
+<p>● Stack Plot</p>
+<p>● Pie Chart</p>
+<p>● Histogram</p>
+<p>● Box Plot</p>
+<p>● Q-Q Plot</p>
+<p>● Plotting with Seaborn and Advanced Concepts</p>
+
+<h1>MODULE 5</h1>
+
+<h3>STATISTICS</h3>
+
+<p>● Data and Types of Data</p>
+<p>● Types of Statistics</p>
+<p>● Descriptive and Inferential Statistics (Skewness, Kurtosis, Point Estimates, Confidence Interval)</p>
+<p>● Central Tendency, Measure of Spread, and Measure of Dispersion</p>
+<p>● Variables and Types of Variables</p>
+<p>● Hypothesis Testing (Z-Test, T-Test, F-Test, ANOVA, Chi-Square Test)</p>
+<p>● Basics of Probability</p>
+<p>● Random Variables and Types of Random Variables</p>
+<p>● Probability Mass Function (PMF), Probability Density Function (PDF), Cumulative Distribution Function (CDF)</p>
+<p>● Types of Distributions (Bernoulli, Uniform, Geometric, Binomial, Poisson, Normal, Exponential)</p>
+<p>● Covariance and Correlation</p>
+<p>● Conditional Probability and Bayes' Theorem</p>
+<p>● Central Limit Theorem</p>
+<p>● Sampling and Types of Sampling</p>
+<p>● Frequency (Absolute Frequency, Relative Frequency, Ratio, Rate, Proportion)</p>
+<p>● Measure of Errors (Standard Error, Relative Error, Confidence Interval)</p>
+
+<h1>MODULE 6</h1>
+
+<h3>DATA PREPARATION</h3>
+
+<p>● Missing Value Handling</p>
+<p>● Outlier Detection and Removal</p>
+<p>● Encoding</p>
+<p>● Scaling</p>
+<p>● Duplicate Data Handling</p>
+<p>● Feature Reduction</p>
+
+<h1>MODULE 7</h1>
+
+<h3>MACHINE LEARNING</h3>
+
+<p>● What is Machine Learning?</p>
+<p>● How Does Machine Learning Work?</p>
+<p>● Types of Machine Learning (Supervised, Unsupervised, Reinforcement Learning)</p>
+<p>● AI vs ML vs DL</p>
+
+<h3>SUPERVISED LEARNING</h3>
+
+<p>● Linear Regression</p>
+<p>● Assumptions of Linear Regression</p>
+<p>● Evaluation Metrics – MSE, RMSE, R² Score</p>
+<p>● Lasso and Ridge Regression</p>
+<p>● Logistic Regression</p>
+<p>● Confusion Matrix and Classification Report</p>
+<p>● ROC and AUC</p>
+<p>● Support Vector Machine (SVM)</p>
+<p>● Decision Tree Algorithm</p>
+<p>● Entropy, Gini Index, and Gain Ratio</p>
+<p>● Random Forest Algorithm</p>
+<p>● K-Nearest Neighbors (KNN)</p>
+<p>● Naive Bayes Algorithm</p>
+<p>● Ensemble Learning</p>
+<p>● Bias and Variance</p>
+<p>● Underfitting and Overfitting</p>
+<p>● Bagging</p>
+<p>● Boosting</p>
+<p>● AdaBoost</p>
+<p>● Gradient Boosting</p>
+<p>● XGBoost</p>
+<p>● Cross Validation</p>
+<p>● Hyperparameter Tuning</p>
+
+<h3>UNSUPERVISED LEARNING</h3>
+
+<p>● K-Means Algorithm</p>
+<p>● Hierarchical Clustering</p>
+<p>● DBSCAN Clustering</p>
+<p>● Principal Component Analysis (PCA)</p>
+<p>● Association Rules</p>
+
+<h3>REINFORCEMENT LEARNING</h3>
+
+<p>● Markov Decision Process (MDP)</p>
+<p>● Q-Learning</p>
+
+<h1>MODULE 8</h1>
+
+<h3>WEB SCRAPING</h3>
+
+<p>● Introduction to Web Scraping</p>
+<p>● Applications of Web Scraping</p>
+<p>● Retrieving Web Contents</p>
+<p>● Parsing HTML and XML</p>
+<p>● Handling Authentication and Forms</p>
+<p>● Scraping Structured Data</p>
+<p>● Storing Scraped Data</p>
+<p>● Ethical Considerations and Best Practices</p>
+<p>● Advanced Topics in Web Scraping</p>
+<p>● Web Scraping Using Selenium</p>
+
+<h1>MODULE 9</h1>
+
+<h3>R AND RSTUDIO</h3>
+
+<p>● Introduction, Installation, Variables</p>
+<p>● Data Types, Numbers, Math, Strings, Booleans</p>
+<p>● Operators</p>
+<p>● Data Structures – Vectors, Lists, Matrices, Arrays</p>
+<p>● Conditional Statements</p>
+<p>● Loops (For, While)</p>
+<p>● R Graphics (Plot, Line, Scatter Plot, Pie Chart, Bar Chart)</p>
+<p>● Statistics</p>
+
+<h1>MODULE 10</h1>
+
+<h3>EXCEL</h3>
+
+<p>● Introduction to the Interface</p>
+<p>● MS Excel Features – Auto Format, AutoSum, List AutoFill, AutoFill, AutoShapes</p>
+<p>● Types of Cell References</p>
+<p>● Saving and Opening Workbooks</p>
+<p>● Basic to Advanced Data Formatting</p>
+<p>● Sorting and Filtering Data</p>
+<p>● Slicer Creation and Shortcut Menus</p>
+<p>● Data Modification in Cells</p>
+<p>● Managing Worksheets</p>
+<p>● Working with Excel Tables</p>
+<p>● Difference Between Table Format and Excel Table</p>
+<p>● Custom Views</p>
+<p>● Custom Lists</p>
+<p>● Flash Fill</p>
+<p>● Different Worksheet Views</p>
+<p>● Data Validation</p>
+<p>● Find and Replace</p>
+
+<h3>FUNCTIONS AND FORMULAS</h3>
+
+<p>● IS Functions</p>
+<p>● Conditional Functions</p>
+<p>● Mathematical Functions</p>
+<p>● Find and Search Functions</p>
+<p>● Lookup Functions</p>
+<p>● Reference Functions</p>
+<p>● Date and Time Functions</p>
+<p>● Miscellaneous Functions</p>
+<p>● Rank Functions</p>
+<p>● Logical Functions</p>
+<p>● What-If Analysis</p>
+<p>● Advanced Excel Using Power Query</p>
+<p>● Dashboard Creation</p>
+<p>● VLOOKUP, HLOOKUP, XLOOKUP</p>
+<p>● ROW() Function</p>
+<p>● Pivot Tables and Pivot Charts</p>
+<p>● Introduction to VBA Macros</p>
+<p>● Creating and Running a Simple Macro – VBA Basics</p>
+<p>● Variables and Data Types</p>
+<p>● Control Structures (If–Then, For–Next, etc.)</p>
+<p>● Working with Excel Objects (Range, Cells, etc.)</p>
+
+<h1>MODULE 11</h1>
+
+<h3>TABLEAU</h3>
+
+<p>● Tableau Introduction</p>
+<p>● Installation of Tableau</p>
+<p>● Data Connection from Various Sources</p>
+<p>● Data Blending</p>
+<p>● Creating Charts in Tableau</p>
+<p>● Filters in Tableau</p>
+<p>● Creating Calculated Fields</p>
+<p>● Applying Analytics to Worksheets</p>
+<p>● Dashboard Creation</p>
+
+<h1>MODULE 12</h1>
+
+<h3>POWER BI</h3>
+
+<p>● Why Power BI?</p>
+<p>● What is Power BI?</p>
+<p>● Power BI Installation</p>
+<p>● Features: Data Integration, Data Transformation, Data Modelling, Visualization, Collaboration, and Sharing</p>
+<p>● BI Components: Power Query, Power Pivot, Power View, Power Map, Power BI Desktop</p>
+<p>● DAX</p>
+<p>● Architecture</p>
+<p>● Power BI Desktop</p>
+<p>● Creating Dashboards</p>
+<p>● Power Query – Filtering Rows</p>
+<p>● Sorting Data</p>
+<p>● Grouping Data by Specific Columns</p>
+<p>● Splitting and Merging Columns</p>
+<p>● Pivoting and Unpivoting Data</p>
+<p>● Replacing Values and Cleaning Text</p>
+<p>● Data Functions</p>
+<p>● Power BI Report Server</p>
+<p>● Power BI Pro License and Its Features</p>
+<p>● Visualization Using Python</p>
+<p>● Sharing Reports in Various Formats</p>
+<p>● Advanced Data Connectivity</p>
+
+<h1>MODULE 13</h1>
+
+<h3>GITHUB</h3>
+
+<p>● Introduction to Git and GitHub</p>
+<p>● Git Init</p>
+<p>● Git Clone</p>
+<p>● Git Commit</p>
+<p>● Git Push</p>
+<p>● Git Pull</p>
+<p>● Version Control Concepts</p>
+<p>● Repositories</p>
+<p>● Branches</p>
+<p>● Commits</p>
+<p>● Tags</p>
+    </section>
+
+
+
+
+
+
+  </main>
+
+  <footer class="h-16 bg-[var(--main-color)] flex justify-center items-center ">
+    &copy; 2026 techolas technologies.all rights reserved
+  </footer>
+
+
+
+  <script src="script.js"></script>
